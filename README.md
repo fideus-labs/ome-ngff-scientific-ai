@@ -5,8 +5,8 @@ class: lead
 paginate: true
 backgroundColor: #fff
 color: #333
-header: 'Scientific AI and the Future of OME-Zarr'
-footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | EMBL BIA 2025'
+header: 'OME-NGFF and Scientific AI'
+footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | OME-NGFF Workshop 2025'
 ---
 
 <style>
@@ -19,18 +19,15 @@ img[alt~="center"] {
 }
 </style>
 
-# Scientific AI and the Future of OME-Zarr
-## Building Intelligent Bioimage Analysis Workflows
+# Scientific AI and the Future of OME-NGFF
+## Intelligent Bioimage Analysis Workflows
 
 **Matt McCormick, PhD**
 *fideus labs*
 
-EMBL Advanced Methods in Bioimage Analysis
-September 17, 2025
+OME-NGFF Workshop 2025
 
 <div class="small-text">
-
-🌐 [HTML slides](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/) | 📄 [PDF slides](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/scientific-ai-omezarr-tutorial.pdf) | 📂 [GitHub repository](https://github.com/fideus-labs/scientific-ai-omezarr-tutorial)
 
 **📜 License:** Content [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | Code [MIT](https://opensource.org/licenses/MIT)
 
@@ -38,514 +35,334 @@ September 17, 2025
 
 ---
 
-## Today's Journey
+## Today's Vision
 
-**50 minutes + 10 minutes Q&A**
+**25 minutes of inspiration**
 
-1. **Extended introduction to ngff-zarr** (15 min)
-   - Converting bioimages to OME-Zarr
+1. **Scientific AI and Your Data** (5 min)
+   - Why OME-NGFF for agentic AI
 
-2. **Introduction to MCP Servers** (15 min)
-   - Add the ngff-zarr MCP server to agentic AI tools
+2. **Introduction to the ngff-zarr MCP Server** (10 min)
+   - AI-powered bioimage conversion and batch processing
 
-3. **The ngff-zarr MCP Server in Action** (15 min)
-   - AI-powered conversions and batch processing
-
-4. **fideus labs introduction** (5 min)
+3. **Next Steps You Can Take** (10 min)
+   - Improve your scientific throughput, reproducibility, and impact
 
 ---
 
-# Part 1: Introduction to ngff-zarr
-*Next-Generation Scientific Imaging*
+# Part 1: Scientific AI and Your Data
+*Why OME-NGFF for Agentic AI*
 
 ---
 
+## The AI Revolution in Science
 
-## What is [OME-Zarr](https://ngff.openmicroscopy.org)?
+**Large Language Models (LLMs)** are transforming scientific computing:
+- 💬 Natural language interfaces to complex tools
+- 🧠 Reasoning over scientific data and workflows
+- 🤖 **Agentic AI**: Models that can plan, decide, and execute
 
-* **Cloud-native** bioimaging file format from the Open Microscopy Environment (OME)
-* Built on **Zarr** - chunked, compressed array storage
-* **Multiscale** pyramidal data structure
-* **Interoperable** across platforms and tools
-* **FAIR** data principles: Findable, Accessible, Interoperable, Reusable
-
----
-
-## Why OME-Zarr Matters
-
-**Traditional Problems:**
-- 🏭 Vendor-specific proprietary formats
-- 📦 Monolithic files difficult to stream
-- ☁️ Limited cloud compatibility
-- 🐢 Poor scalability for large datasets
-
-**OME-Zarr Solutions:**
-- 📖 Open specification
-- 🧩 Chunked data access
-- 🌐 Cloud-optimized storage
-- ⚡ Parallel processing friendly
-
-<!--
-footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https:/fideus.io)'
--->
+**The Challenge:** *How do we give AI meaningful access to your scientific imaging data?*
 
 ---
 
-## What is ngff-zarr?
+## What is Agentic AI?
 
-* [**ngff-zarr**](https://ngff-zarr.readthdocs.io) is an *lean and kind* open-source toolkit for working with OME-Zarr, the next-generation file format for scientific imaging.
-* Provides **command-line**, **Python**, **TypeScript**, and **AI** interfaces for converting, validating, optimizing, and analyzing bioimaging data.
-* Developed by the OME-Zarr and ITK communities for **interoperability** and **performance**.
-* Supports a wide range of scientific image formats and workflows.
+**Traditional AI:** Question → Answer
 
-![h:150 center ngff-zarr logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ngff-zarr-logo.png)
+**Agentic AI:**
+- 🧠 **Context** - Understanding your specific problem
+- 🛠️ **Tools** - Access to your scientific software
+- 🔄 **Reasoning** - Planning multi-step workflows
+- ✅ **Execution** - Actually processing your data
 
-<!--
-footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Matt McCormick, PhD | fideus labs | EMBL BIA 2025'
--->
----
-
-## What can ngff-zarr do for you?
-
-- 🔄 **Convert** your **scientific images** (NRRD, TIFF, HDF5, and more) to OME-Zarr for scalable, cloud-ready storage.
-- ✅ **Validate** OME-Zarr datasets to ensure compliance and **interoperability**.
-- 🛠️ **Optimize** chunking and compression for **efficient access** and **storage**.
-- 🤖 **Integrate** with **AI** and **analysis tools** via the **Model Context Protocol (MCP)**.
-- 🚀 **Automate** batch **processing** and reproducible workflows for large-scale projects.
+**Result:** AI that understands your science and automates complex analyses
 
 ---
 
-## 🛠️ Hands-On: Converting bioimages to OME-Zarr
+## Why OME-NGFF is Perfect for Agentic AI
 
-
----
-
-### 💻 Prerequisites: VS Code Installation
-
-### Install [Visual Studio Code](https://code.visualstudio.com/)
-
-**Download VS Code:**
-- 🌐 **Web:** Visit [code.visualstudio.com](https://code.visualstudio.com/)
-- 🐧 **Linux:** `sudo snap install code --classic` or download .deb/.rpm
-- 🍎 **macOS:** Download from website or `brew install --cask visual-studio-code`
-- 🪟 **Windows:** Download installer or `winget install Microsoft.VisualStudioCode`
+### ☁️ Cloud-Ready Architecture
+* **Chunked storage** - access specific regions without downloading entire datasets
+* **Hierarchical structure** - AI can reason about data at multiple scales
+* **Open standard** - works everywhere your AI runs
 
 ---
 
-![h:200 Pixi logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/pixi-banner.svg)
+## Why OME-NGFF is Perfect for Agentic AI
 
-### 📦 Prerequisites: Pixi reproducible software environment
-
----
-
-## What is Pixi?
-
-[Pixi](https://pixi.sh/dev/) is a **fast, modern,** and **reproducible package** and **environment manager** built on the **conda ecosystem**. It provides:
-
-- 🚀 **Easy, reproducible environments** for **any language**
-- 🛠️ **Task runner** for project automation
-- 🔒 **Isolation** and **cross-platform** support (Linux, macOS, Windows)
-- 📦 **Simple dependency management** with a single file (`pixi.toml` or `pyproject.toml`)
+### 📚 Rich Metadata
+* **Spatial information** preserved and queryable
+* **Standards-compliant** - AI knows what it's working with
+* **Ecosystem of tools** - interoperability enables complex workflows
 
 ---
 
-## ⬇️ How to install Pixi
+## Why OME-NGFF is Perfect for Agentic AI
+### 🌐 Truly Open
+* **No vendor lock-in** - your data remains yours
+* **Community-driven** - growing ecosystem of tools and support
+* **Reproducible science** - data format ensures long-term accessibility
 
-On Linux/macOS:
+---
 
-```bash
-wget -qO- https://pixi.sh/install.sh | sh
+## The Power of the Combination
+
+```
+Your Scientific Data (OME-NGFF)
+        ↓
+    AI Agent
+   (with tools & context)
+        ↓
+Automated, Reproducible Workflows
 ```
 
-On Windows (PowerShell):
-
-```powershell
-powershell -ExecutionPolicy ByPass -c "irm -useb https://pixi.sh/install.ps1 | iex"
-```
-
-After installation, add `~/.pixi/bin` (Linux/macOS) or `%USERPROFILE%\.pixi\bin` (Windows) to your PATH if not done automatically.
+**What becomes possible:**
+- 🧪 Analyze petabyte-scale datasets in minutes
+- 📊 Reproducible computational experiments
+- 🎯 Intelligent parameter optimization
+- 🚀 Batch processing without manual intervention
 
 ---
 
-## 🚀 How to run Pixi tasks
-
-Pixi lets you define and run project tasks in your `pixi.toml` or `pyproject.toml`.
-
-To run a task (e.g., `start`):
-
-```bash
-pixi run start
-```
-
-You can define custom tasks (like `test`, `lint`, etc.) and run them the same way:
-
-```bash
-pixi run test
-pixi run lint
-```
-
-Pixi ensures all dependencies and the environment are set up before running your task.
-
----
-
-## 🐚 Interactive shell with `pixi shell`
-
-**Enter an interactive shell** with your project environment activated:
-
-```bash
-pixi shell
-```
-
-**What happens:**
-- 🔧 **Environment activated** - all dependencies available
-- 🎯 **Direct command execution** - no need for `pixi run` prefix
-- 🚪 **Easy exit** - just type `exit` when done
-
----
-
-## 👩‍💻️ Exercise 1: Convert the sample NRRD image to OME-Zarr
-
-```bash
-pixi run convert
-```
-
----
-
-## What Just Happened?
-
-- 🔍 **Automatic multiscale generation** - without aliasing artifacts
-- 🧩 **Intelligent chunking** - optimized for access patterns
-- 📊 **Metadata preservation** - spatial information maintained
-- 🗜️ **Compression applied** - reduced file size
-- ☁️ **Cloud-ready format** - object-store optimized, can be served via HTTP
-
----
-
-## 👩‍💻️ Exercise 2: Convert the sample NRRD image to OME-Zarr version 0.5
-
-```bash
-pixi run convert-ome-zarr-0.5
-```
-
-```bash
-# Count the number of files created
-find carp.ome.zarr -type f | wc -l
-```
-
----
-
-## 👩‍💻️ Exercise 3: Convert the sample NRRD image to OME-Zarr with sharding
-
-```bash
-pixi run convert-sharding
-```
-
-```bash
-# Count the number of files created
-find carp.ome.zarr -type f | wc -l
-```
----
-
-## What Just Happened? ✨ New in OME-Zarr 0.5
-
-- 🪣 **Sharding enabled** - multiple chunks stored in single files
-- 📦 **Optimized storage** - fewer small files, better filesystem performance
-
-**What is Sharding?**
-*Sharding combines multiple small chunks into larger "shard" files, dramatically reducing the number files needed to store data while maintaining random access capabilities.*
-
----
-
-# Part 2: Introduction to MCP Servers
-*Connecting AI to Your Data*
-
----
-
-## 🧠 Understanding Large Language Model (LLM) Context
-
-**What is Model Context?**
-- 📝 **Information** the AI model can "see" and reason about
-- 🧮 **Limited capacity** - typically measured in tokens (words/symbols)
-- ⏱️ **Temporary memory** - context is conversation-specific
-- 🎯 **Scope of knowledge** for making informed decisions
-
----
-
-## 🧠 Understanding Large Language Model (LLM) Context
-
-**Why Context Matters:**
-- 🔍 **Better understanding** - more relevant, accurate responses
-- 🎛️ **Tool selection** - AI chooses appropriate tools for the task
-- 🔗 **Data integration** - combines multiple information sources
-- 🚀 **Workflow automation** - maintains state across complex operations
-
-**The Challenge:** *How do we give AI access to your scientific data and tools?*
+# Part 2: Introduction to the ngff-zarr MCP Server
+*AI-Powered Bioimage Conversion and Batch Processing*
 
 ---
 
 ## What is the Model Context Protocol (MCP)?
 
-**Universal standard** for connecting AI assistants to external data and tools
-
-**Key Components:**
-- 🤖 **MCP Client** - integrated in AI applications
-- 🖥️ **MCP Server** - exposes specific capabilities
-- 🔗 **Transport Layer** - JSON-RPC 2.0 communication
-- 🔧 **Standardized Interface** - tools, resources, prompts
-
----
-
-## MCP Architecture
+**Universal bridge** between AI assistants and your scientific tools
 
 ```
-AI Application (Qodo, Claude, etc.)
-    ↕️ JSON-RPC 2.0
-MCP Client
-    ↕️ STDIO/HTTP
-MCP Server (ngff-zarr)
-    ↕️
-Scientific Data & Tools
+Your AI Assistant (Claude, Qodo, etc.)
+        ↕️
+    MCP Client
+        ↕️
+  MCP Server (ngff-zarr)
+        ↕️
+Your Scientific Data & Tools
 ```
 
-**Benefits:**
-- Single protocol for all integrations
-- Bidirectional communication
-- Context-aware AI interactions
+**Why MCP?**
+- ✅ Standard protocol - works with multiple AI platforms
+- 🔧 Easy integration - no custom coding required
+- 🔄 Bidirectional communication - rich interaction model
 
 ---
 
-## Why MCP for Scientific Computing?
+## The ngff-zarr MCP Server
 
-**Before MCP:**
-- 🔧 Custom integrations for each tool
-- 🚫 Limited AI access to scientific data
-- ✋ Manual, error-prone workflows
-
-**With MCP:**
-- 💬 **Natural language** interface to scientific tools
-- 🤖 **Automated** data processing pipelines
-- 🧠 **AI-driven** optimization and analysis
-- 🔄 **Reproducible** computational workflows
+**What is it?**
+* [**ngff-zarr**](https://ngff-zarr.readthedocs.io) is an open-source toolkit for working with OME-NGFF data
+* The **ngff-zarr MCP Server** exposes this toolkit to agentic AI systems
+* **AI-ready interface** - natural language commands to scientific operations
 
 ---
 
-## 🛠️ Hands-On: Configure Qodo with the ngff-zarr MCP
+## The ngff-zarr MCP Server
+**What can it do?**
+- 🔄 **Convert** scientific images (NRRD, TIFF, Nifti, etc.) to OME-Zarr
+- ✅ **Validate** OME-Zarr datasets for compliance and interoperability
+- 🛠️ **Optimize** compression and chunking for your specific access patterns
+- 📝 **Inspect** multiscale pyramids, metadata, and data structure
+- 📦 **Batch process** large collections of images with reproducible settings
 
 ---
 
-### Install [uv](https://docs.astral.sh/uv/), if not already installed
+## Real-World Example: Batch Conversion
 
-```bash
-pixi global install uv
+**Without agentic AI:**
+```
+Manual process for 50 TIFF files:
+1. Write conversion script
+2. Optimize parameters (trial & error)
+3. Run conversions
+4. Verify results
+5. Debug failures
+⏱️ Hours or days of work
 ```
 
-`uvx`, which comes with `uv`, will be used to install the `ngff-zarr-mcp` command-line tool and its dependencies, and run the MCP server.
-
 ---
 
-### Install Qodo Extension in VS Code
+**With agentic AI + ngff-zarr MCP:**
+```
+Natural language request:
+"Convert my 50 microscopy images to OME-NGFF
+with optimal compression for my storage constraints"
 
-![h:480 center Qodo extension](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/vs-code-qodo-install.png)
-
----
-
-#### Add Qodo MCP Tools
-
-![h:480 center Qodo Add MCP Tools](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-add-mcp-tools.png)
-
----
-
-#### Add new MCP
-
-![h:480 center Qodo Add new MCP](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-add-new-mcp.png)
-
----
-
-#### Add the ngff-zarr MCP server config
-
-```json
-{
-  "mcpServers": {
-    "ngffZarr": {
-      "command": "uvx",
-      "args": ["ngff-zarr-mcp"]
-    }
-  }
-}
+AI agent:
+1. Analyzes sample image
+2. Determines optimal chunking
+3. Generates conversion script
+4. Executes with progress tracking
+5. Reports results
+✅ Automated, reproducible, minutes
 ```
 
-![h:300 center Qodo ngff-zarr MCP server](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-ngff-zarr-config.png)
+---
+
+## Key Capabilities in Action
+
+### 🤖 Intelligent Conversion
+* AI analyzes your image data automatically
+* Selects appropriate compression codecs
+* Generates multiscale pyramids without artifacts
+* Optimizes for your hardware and access patterns
 
 ---
 
-#### Watch the ngff-zarr MCP server start
+## Key Capabilities in Action
 
-![h:480 center Qodo ngff-zarr MCP server start](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/qodo-ngff-zarr-mcp-enabled.png)
-
----
-
-# Part 3: The ngff-zarr MCP Server
-*AI-Powered Scientific Image Processing*
-
----
-
-## ngff-zarr MCP Server Capabilities
-
-**Core Functions:**
-- 🔄 Convert scientific formats to OME-Zarr
-- 🔍 Inspect and validate OME-Zarr stores
-- 🛠️ Optimize compression and chunking
-- 📝 Generate processing scripts
-- 📦 Batch operation planning
-
-**AI Integration:**
-- 💬 Natural language commands
-- 🎯 Intelligent parameter selection
-- 🤖 Automated workflow generation
+### 📊 Analysis and Reporting
+* Inspect complex multiscale structures
+* Generate processing scripts
+* Plan batch operations with resource awareness
+* Validate results automatically
 
 ---
 
-## 🛠️ Hands-On: AI-Powered Conversion
+## Key Capabilities in Action
+
+### 🔄 Workflow Integration
+* Combine multiple operations seamlessly
+* Chain conversions with analysis
+* Maintain reproducibility across runs through scripts
+* Generate documented, auditable workflows
 
 ---
 
-### 💬 Convert a bioimage with AI assistance
+## The Future of Scientific Image Analysis
 
-Put the Qodo Anteater to work!
+**Today:** AI helps with individual tasks
 
-In Qodo chat:
-```
-Convert the vs_male.nrrd file to OME-Zarr format and
-find the optimal compression codec for this type of data.
-```
+**Tomorrow:** AI orchestrates entire scientific workflows
+- 🧪 Multi-step analysis pipelines
+- 🎯 Automated optimization and tuning
+- 📈 Scalable processing of massive datasets
+- 🔬 Knowledge discovery through AI reasoning
 
-**✨ [Watch the AI agent](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-convert-output.png):**
-1. 🔍 Analyze the input file
-2. 🎯 Select appropriate parameters
-3. ⚙️ Execute the conversion
-4. 📊 Report optimization results
-
+**Your role:** Guide the AI with scientific questions, not technical commands
 
 ---
 
-### 💬 Examine OME-Zarr contents
-
-**Ask the AI to explore:**
-
-```
-Examine the contents of carp.ome.zarr and tell me
-about its structure, dimensions, and metadata
-```
-
-**✨ [The AI agent will](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-examine-contents-output.png):**
-- 🔍 Inspect multiscale levels
-- 📏 Report spatial metadata
-- 🧩 Analyze chunk structure
-- ✨ Suggest next steps
+# Part 3: Next Steps You Can Take
+*Improve Your Scientific Throughput, Reproducibility, and Impact*
 
 ---
 
-### 💬 Generate batch script
+## Getting Started with OME-NGFF
 
-**Scale up with AI automation:**
+### 📚 Resources and Documentation
 
-```
-I have a folder of 50 similar NRRD files.
-Generate a Python script to batch convert them all
-to OME-Zarr with the same optimal settings
-```
+**ngff-zarr Project:**
+- 📖 **Documentation:**: https://ngff-zarr.readthedocs.io
+  *  Comprehensive guides and API reference
+- 📂 **GitHub:** https://github.com/fideus-labs/ngff-zarr
 
-**✨ [The AI agent creates](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-generate-batch-script-output.png):**
-- 🐍 Complete Python script
-- ⚠️ Error handling
-- 📈 Progress reporting
-- 🎯 Optimized parameters from previous analysis
+**OME-NGFF Specification:**
+- 📋 **NGFF Standard:** https://ngff.openmicroscopy.org
+- 📚 **Community:** Open Microscopy Environment (OME)
 
 ---
 
-## The Future of Scientific AI
+## Tools for Every Scientist
 
-**Today's Demo Shows:**
-- 💬 **Conversational** scientific computing
-- 🤖 **Automated** optimization
-- 🔄 **Reproducible** workflows
-- ✨ **Accessible** advanced techniques
-
-**Tomorrow's Possibilities:**
-- 🧬 Multi-modal analysis pipelines
-- 🧠 Intelligent experiment design
-- 🛡️ Automated quality control
-- 🌐 Cross-platform integration
+### 🐍 ngff-zarr Python Library
+**For computational researchers:**
+- Direct programmatic access to conversion and optimization
+* Integration with Jupyter notebooks and workflows
+* Scientific Python ecosystem compatibility (NumPy, Dask, Xarray)
+* Custom analysis pipelines built on OME-NGFF
 
 ---
 
-# fideus labs
-**Fostering trust 🤝 and advancing understanding 🧠 from scientific and biomedical images 🔬️**
+## Tools for Every Scientist
+
+### 🟦 ngff-zarr TypeScript Library
+**For web and visualization developers:**
+- Browser-based OME-NGFF exploration
+* Web applications for image analysis
+* Cloud-native deployment options
+
+*Note: Another talk this afternoon will cover cloud-based imaging workflows in detail!*
 
 ---
 
-## About [fideus labs](https://fideus.io)
+## ⨍ideus labs: Your Support Partner
 
-**Specialties:**
-- **Biomedical Imaging** - ITK core development
-- **Scientific Visualization** - advanced rendering
-- **Open science** - pioneering decentralized science
-- **AI Integration** - intelligent workflows
-
-**Open Source Leadership:**
-- ITK (Insight Toolkit) core team
-- OME-Zarr ecosystem contributor
-- Curate ngff-zarr development
+**Who we are:**
+- 🧬 Biomedical imaging specialists
+- 🌟 OME-NGFF ecosystem contributors
+- 🤝 Open science advocates
 
 ---
 
-## Our Approach
+## ⨍ideus labs: Your Support Partner
 
-**Research Partnership:**
-- Government laboratories
-- Academic institutions
-- Industry leaders
-- Open source communities
+**What we offer:**
+- 📚 Training and consultation services
+- 🔗 Integration support for your existing workflows
 
 ---
 
-## Connect With Us
+## ⨍ideus labs: Your Support Partner
 
-**fideus labs services:**
-- Custom imaging solutions
-- Scientific software development
-- Training and consultation
+**Connect with us:**
+- 📧 Email: [info@fideus.io](mailto:info@fideus.io)
+- 🌐 Website: [https://fideus.io](https://fideus.io)
+- 📰 Subscribe to our newsletter: [https://fideus.io/subscribe](https://fideus.io/subscribe)
+- 🐙 Follow our GitHub: [https://github.com/fideus-labs](https://github.com/fideus-labs)
 
-**Connect**
-- [Subscribe to our newsletter](https://fideus.io/subscribe)
-- [Email us: info@fideus.io](mailto:info@fideus.io)
-- [Follow our GitHub](https://github.com/fideus-labs)
+---
 
-*We are hiring! [Send us](mailto:matt@fideus.io) your CV and GitHub profile.*
+## Your Path Forward
+
+### 🎯 Immediate Actions
+1. **Explore** the ngff-zarr documentation and examples
+2. **Try** converting a sample image to OME-NGFF
+3. **Evaluate** whether OME-NGFF fits your workflow
+
+---
+
+## Your Path Forward
+
+### 🚀 Short-term Goals
+1. **Pilot** OME-NGFF adoption in your lab
+2. **Integrate** with your existing analysis pipelines
+3. **Measure** improvements in efficiency and reproducibility
+
+---
+
+## Your Path Forward
+
+### 📈 Long-term Vision
+1. **Scale** your analysis to larger datasets
+2. **Leverage** AI and automation for complex workflows
+3. **Contribute** back to the community
 
 ---
 
 ## Key Takeaways
 
-✅ **OME-Zarr** - Future of scientific imaging formats
+✅ **OME-NGFF** is cloud-ready, open, and built for agentic AI
 
-✅ **MCP Servers** - Bridge AI and scientific tools
+✅ **MCP Servers** bridge your AI assistants and scientific tools
 
-✅ **Natural Language** - New interface for scientific computing
+✅ **ngff-zarr** makes powerful bioimage analysis accessible to everyone
 
-✅ **Accessible Research** - Cloud-native, collaborative science
+✅ **Your impact multiplies** when you combine AI, open data, and reproducible science
 
 ---
 
 ## Questions & Discussion
 
-**What we covered:**
-- OME-Zarr fundamentals and conversion
-- MCP architecture and benefits
-- AI-powered scientific workflows
+**💡 What we covered:**
+- Why OME-NGFF is essential for scientific AI
+- How ngff-zarr MCP enables intelligent automation
+- Concrete steps to improve your research
 
-**Let's discuss:**
-- Your specific use cases
-- Integration challenges
-- Future possibilities
-- Next steps for implementation
+**👥 Let's discuss:**
+- Your specific imaging challenges
+- Integration questions for your workflow
+- How OME-NGFF can accelerate your research
