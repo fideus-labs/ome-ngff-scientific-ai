@@ -33,6 +33,21 @@ OME-NGFF Workshop 2025
 
 </div>
 
+<!-- 
+SPEAKER NOTES - Title Slide (2 minutes)
+
+Welcome and Introduction:
+- Introduce yourself warmly
+- "How many of you are already working with OME-NGFF in your research?"
+- "And who here has experimented with AI assistants like ChatGPT or Claude in their scientific work?"
+
+Set the stage:
+- "Today I want to show you how these two powerful technologies - OME-NGFF and AI - are converging to transform how we work with bioimage data"
+- Build excitement about the practical applications they'll see
+
+Timing: Keep this brief - 2 minutes max. Energy should be high!
+-->
+
 ---
 
 ## Today's Vision
@@ -48,10 +63,38 @@ OME-NGFF Workshop 2025
 3. **Next Steps You Can Take** (10 min)
    - Improve your scientific throughput, reproducibility, and impact
 
+<!-- 
+SPEAKER NOTES - Agenda (1 minute)
+
+Roadmap:
+- "We have 25 minutes together, so let's make them count"
+- Point to each section as you describe it
+- "First, I'll show you WHY OME-NGFF and AI are a perfect match"
+- "Then we'll dive into a REAL tool you can use today - the ngff-zarr MCP server"
+- "Finally, concrete steps YOU can take this week to get started"
+
+Questions to engage:
+- "Does this agenda make sense for where you are in your OME-NGFF journey?"
+- "Anyone here already using AI in their image analysis workflows?"
+
+Timing: 1 minute - keep it moving!
+-->
+
 ---
 
 # Part 1: Scientific AI and Your Data
 *Why OME-NGFF for Agentic AI*
+
+<!-- 
+SPEAKER NOTES - Part 1 Transition (30 seconds)
+
+Transition:
+- "Let's start with the big picture - what's happening in AI right now"
+- Energy shift: move from logistics to inspiration
+- "I want you to think about your most tedious, repetitive imaging workflow..."
+
+Timing: Quick transition - 30 seconds
+-->
 
 ---
 
@@ -63,6 +106,27 @@ OME-NGFF Workshop 2025
 - 🤖 **Agentic AI**: Models that can plan, decide, and execute
 
 **The Challenge:** *How do we give AI meaningful access to your scientific imaging data?*
+
+<!-- 
+SPEAKER NOTES - AI Revolution (1.5 minutes)
+
+Context setting:
+- "We're in the middle of a profound shift in how we interact with computers"
+- "Raise your hand if you've used ChatGPT or Claude to write code or analyze data"
+- "But here's what's NEW - we're moving beyond chatbots to AGENTS"
+
+Key point - AGENTIC AI:
+- Emphasize the difference: "Not just answering questions, but actually DOING work"
+- "Planning multiple steps, using tools, making decisions"
+- "Like having a postdoc who never sleeps and never makes transcription errors"
+
+The challenge:
+- "But here's the problem - how does AI actually work with YOUR imaging data?"
+- "That's where OME-NGFF comes in..."
+- Pause for effect before moving on
+
+Timing: 1.5 minutes - this is foundational!
+-->
 
 ---
 
@@ -78,6 +142,27 @@ OME-NGFF Workshop 2025
 
 **Result:** AI that understands your science and automates complex analyses
 
+<!-- 
+SPEAKER NOTES - Agentic AI Definition (1.5 minutes)
+
+Break it down clearly:
+- "Let me make this concrete with an example..."
+- Walk through each element:
+  * Context: "The AI knows about YOUR specific microscope, YOUR file formats"
+  * Tools: "It can actually run conversion software, optimization scripts"
+  * Reasoning: "It plans: first validate, then convert, then optimize"
+  * Execution: "And it DOES it - not just tells you how"
+
+Engage with questions:
+- "Think about your last batch conversion task - how long did it take?"
+- "What if you could just DESCRIBE what you need and have it happen?"
+
+Make it tangible:
+- "This isn't science fiction - I'm going to show you this working in 10 minutes"
+
+Timing: 1.5 minutes - enthusiasm is key here!
+-->
+
 ---
 
 ## Why OME-NGFF is Perfect for Agentic AI
@@ -86,6 +171,27 @@ OME-NGFF Workshop 2025
 * **Chunked storage** - access specific regions without downloading entire datasets
 * **Hierarchical structure** - AI can reason about data at multiple scales
 * **Open standard** - works everywhere your AI runs
+
+<!-- 
+SPEAKER NOTES - OME-NGFF + AI Part 1: Cloud Architecture (1 minute)
+
+Connect to AI capabilities:
+- "Now here's where it gets interesting - OME-NGFF was DESIGNED for exactly this kind of intelligent access"
+
+Cloud-ready chunked storage:
+- "The AI doesn't need to download terabytes - it can grab just the chunks it needs"
+- "Like reading specific chapters of a book instead of the whole library"
+
+Hierarchical structure:
+- "Multiple resolution levels mean the AI can start with an overview, then zoom into details"
+- "Smart data access for smart systems"
+
+Question to audience:
+- "How many of you have datasets that are too large to process on a single machine?"
+- Acknowledge the pain point
+
+Timing: 1 minute - keep pace brisk
+-->
 
 ---
 
@@ -96,6 +202,24 @@ OME-NGFF Workshop 2025
 * **Standards-compliant** - AI knows what it's working with
 * **Ecosystem of tools** - interoperability enables complex workflows
 
+<!-- 
+SPEAKER NOTES - OME-NGFF + AI Part 2: Metadata (45 seconds)
+
+Rich metadata advantage:
+- "But storage format isn't enough - the AI needs to UNDERSTAND your data"
+- "OME-NGFF embeds all the spatial metadata, calibration, channel information"
+- "The AI can reason: 'This is confocal, 0.5 micron spacing, 4 channels including DAPI'"
+
+Standards matter:
+- "Because it's standards-compliant, the AI can make intelligent assumptions"
+- "It knows what 'microns' means, what coordinate systems to use"
+
+Ecosystem:
+- "And it can chain together multiple tools that all speak OME-NGFF"
+
+Timing: 45 seconds - building momentum
+-->
+
 ---
 
 ## Why OME-NGFF is Perfect for Agentic AI
@@ -103,6 +227,25 @@ OME-NGFF Workshop 2025
 * **No vendor lock-in** - your data remains yours
 * **Community-driven** - growing ecosystem of tools and support
 * **Reproducible science** - data format ensures long-term accessibility
+
+<!-- 
+SPEAKER NOTES - OME-NGFF + AI Part 3: Open Standards (45 seconds)
+
+Open science connection:
+- "And here's what I love most - this is TRULY open"
+- "Your data isn't trapped in some proprietary format"
+- "The AI tools we build today will work with your data in 10 years"
+
+Emphasize community:
+- "You're joining a community, not buying into a vendor"
+- "That's why we're all here at this workshop!"
+
+Question:
+- "How many of you have struggled with proprietary formats becoming obsolete?"
+- Validate their pain
+
+Timing: 45 seconds
+-->
 
 ---
 
@@ -123,10 +266,45 @@ Automated, Reproducible Workflows
 - 🎯 Intelligent parameter optimization
 - 🚀 Batch processing without manual intervention
 
+<!-- 
+SPEAKER NOTES - The Combination (1 minute)
+
+Bring it together:
+- "So let's put this together - what does this MEAN for your research?"
+- Point to the diagram: "Data format + AI capability = transformation"
+
+Make it real:
+- "Imagine: 'Convert these 1000 microscopy images, optimize for cloud storage, and validate the results'"
+- "Just describe it, and it happens"
+- "No bash scripts, no parameter tuning, no debugging at 2am"
+
+Each bullet:
+- Petabyte: "Datasets that would take weeks become lunch-break tasks"
+- Reproducible: "Everything documented, every parameter logged automatically"
+- Optimization: "The AI tries different approaches and finds what works best"
+- Batch: "Your weekend work becomes 10 minutes on Monday morning"
+
+Pause:
+- "Now let me show you how this actually works..."
+
+Timing: 1 minute - this is the payoff slide!
+-->
+
 ---
 
 # Part 2: Introduction to the ngff-zarr MCP Server
 *AI-Powered Bioimage Conversion and Batch Processing*
+
+<!-- 
+SPEAKER NOTES - Part 2 Transition (30 seconds)
+
+Energy shift:
+- "Okay, enough theory - let's get practical"
+- "I'm going to introduce you to a tool you can actually use TODAY"
+- Check time - should be around 8-9 minutes in
+
+Timing: 30 seconds - quick transition
+-->
 
 ---
 
@@ -149,6 +327,31 @@ Your Scientific Data & Tools
 - 🔧 Easy integration - no custom coding required
 - 🔄 Bidirectional communication - rich interaction model
 
+<!-- 
+SPEAKER NOTES - MCP Introduction (1.5 minutes)
+
+What is MCP:
+- "MCP is like USB for AI - a universal connector"
+- "Developed by Anthropic, but it's open and vendor-neutral"
+- Point to diagram: "Your AI assistant connects to scientific tools through this protocol"
+
+Why this matters:
+- "You don't have to choose between AI platforms"
+- "Works with Claude, with Qodo, with future AI systems"
+- "The same MCP server works with all of them"
+
+Easy integration:
+- "And here's the beautiful part - YOU don't have to code the integration"
+- "The MCP server does all the heavy lifting"
+
+Question:
+- "Anyone here familiar with MCP already?"
+- If yes: "Great! You know where this is going"
+- If no: "You're about to see how simple it is"
+
+Timing: 1.5 minutes - this is new to most people
+-->
+
 ---
 
 ## The ngff-zarr MCP Server
@@ -157,6 +360,26 @@ Your Scientific Data & Tools
 * [**ngff-zarr**](https://ngff-zarr.readthedocs.io) is an open-source toolkit for working with OME-NGFF data
 * The **ngff-zarr MCP Server** exposes this toolkit to agentic AI systems
 * **AI-ready interface** - natural language commands to scientific operations
+
+<!-- 
+SPEAKER NOTES - ngff-zarr Introduction (1 minute)
+
+Introduce the tool:
+- "This is ngff-zarr - our contribution to the OME-NGFF ecosystem"
+- "It's a Python toolkit we've been developing at fideus labs"
+- "And now it has an MCP server that lets AI systems use it"
+
+What this means:
+- "You can talk to your AI assistant: 'Convert this image to OME-NGFF'"
+- "And behind the scenes, the MCP server translates that to ngff-zarr commands"
+- "Then executes them and reports back results"
+
+Emphasize:
+- "Completely open source - MIT licensed"
+- "Link is in the slides - you can try this TODAY"
+
+Timing: 1 minute
+-->
 
 ---
 
@@ -167,6 +390,38 @@ Your Scientific Data & Tools
 - 🛠️ **Optimize** compression and chunking for your specific access patterns
 - 📝 **Inspect** multiscale pyramids, metadata, and data structure
 - 📦 **Batch process** large collections of images with reproducible settings
+
+<!-- 
+SPEAKER NOTES - Capabilities (1.5 minutes)
+
+Go through each capability with examples:
+
+Convert:
+- "Supports all the formats you're probably using - TIFF, NRRD, Nifti, and more"
+- "AI can figure out the right conversion settings for your data"
+
+Validate:
+- "Check if your OME-Zarr files are spec-compliant"
+- "Catch issues before you publish or share data"
+
+Optimize:
+- "This is powerful - AI can test different compression and chunking strategies"
+- "Find the sweet spot for YOUR access patterns"
+
+Inspect:
+- "Get detailed information about multiscale structure"
+- "Understand what's actually in your data"
+
+Batch process:
+- "And here's where it gets really useful..."
+- Set up for next slide
+
+Question:
+- "Which of these would save you the most time in YOUR workflow?"
+- Acknowledge responses
+
+Timing: 1.5 minutes - let each capability sink in
+-->
 
 ---
 
@@ -182,6 +437,41 @@ Manual process for 50 TIFF files:
 5. Debug failures
 ⏱️ Hours or days of work
 ```
+
+<!-- 
+SPEAKER NOTES - Before AI Example (1 minute)
+
+Make it relatable:
+- "Let's be honest about how this usually goes..."
+- Walk through with pain points:
+
+1. Write script:
+   - "You dig through documentation, copy-paste examples"
+   - "Spend an hour just getting the syntax right"
+
+2. Optimize:
+   - "Then the fun begins - what chunk size? Which codec?"
+   - "You try a few, compare file sizes, check performance"
+   - "Another hour or two gone"
+
+3. Run:
+   - "Finally hit enter... and wait"
+   - "Hope nothing breaks"
+
+4. Verify:
+   - "Did it actually work? Are the dimensions right?"
+   - "Is the metadata preserved?"
+
+5. Debug:
+   - "Oh good, file 23 failed because of an edge case..."
+   - "Start over from step 1"
+
+Question:
+- "Sound familiar to anyone?"
+- Laugh together about the pain
+
+Timing: 1 minute - build the contrast for next slide
+-->
 
 ---
 
@@ -200,6 +490,38 @@ AI agent:
 ✅ Automated, reproducible, minutes
 ```
 
+<!-- 
+SPEAKER NOTES - After AI Example (1.5 minutes)
+
+The contrast:
+- "Now watch what happens with agentic AI..."
+- Read the natural language request slowly
+- "That's it. That's all YOU do."
+
+AI does the work:
+- "The AI takes over:"
+- "Analyzes a sample to understand your data"
+- "Picks optimal settings based on your constraints"
+- "Generates AND RUNS the conversion"
+- "Tracks progress, handles errors"
+- "Gives you a summary when done"
+
+The magic moment:
+- "From hours or days to MINUTES"
+- "From error-prone to reproducible"
+- "From tedious to... well, you just describe what you want"
+
+Reality check:
+- "Now, this isn't magic - the AI can still make mistakes"
+- "But it's MUCH faster to review and correct than to do from scratch"
+- "And it documents everything automatically"
+
+Question:
+- "What batch processing task would you try this on first?"
+
+Timing: 1.5 minutes - this is the "wow" moment
+-->
+
 ---
 
 ## Key Capabilities in Action
@@ -210,6 +532,31 @@ AI agent:
 * Generates multiscale pyramids without artifacts
 * Optimizes for your hardware and access patterns
 
+<!-- 
+SPEAKER NOTES - Intelligent Conversion (1 minute)
+
+Deep dive on intelligence:
+- "Let's talk about what 'intelligent' actually means here"
+
+Auto-analysis:
+- "The AI looks at your data - dimensions, bit depth, noise characteristics"
+- "It's not just blindly applying default settings"
+
+Codec selection:
+- "Based on your data type, it might choose blosc for speed or zstd for size"
+- "It understands the tradeoffs"
+
+Multiscale:
+- "Generates pyramids with proper downsampling - no aliasing artifacts"
+- "You get high-quality visualization automatically"
+
+Optimization:
+- "Even considers your hardware - local disk vs cloud storage"
+- "Different access patterns need different chunk sizes"
+
+Timing: 1 minute
+-->
+
 ---
 
 ## Key Capabilities in Action
@@ -219,6 +566,32 @@ AI agent:
 * Generate processing scripts
 * Plan batch operations with resource awareness
 * Validate results automatically
+
+<!-- 
+SPEAKER NOTES - Analysis and Reporting (1 minute)
+
+Beyond conversion:
+- "But the ngff-zarr MCP server isn't just for conversion"
+- "It's also a powerful analysis tool"
+
+Inspection:
+- "Ask it to describe your multiscale structure"
+- "Get detailed reports on metadata, dimensions, chunk sizes"
+
+Script generation:
+- "Need a script for later? It can generate that"
+- "Python, shell scripts, whatever you need"
+
+Resource awareness:
+- "Planning a big batch job? It can estimate time and space requirements"
+- "Helps you plan cloud compute costs before you run"
+
+Validation:
+- "And it validates outputs automatically"
+- "Catches problems before you move to the next step"
+
+Timing: 1 minute - moving faster now, check time (should be ~18-19 min)
+-->
 
 ---
 
@@ -234,10 +607,47 @@ AI agent:
 
 **Your role:** Guide the AI with scientific questions, not technical commands
 
+<!-- 
+SPEAKER NOTES - Future Vision (1 minute)
+
+Look ahead:
+- "This is just the beginning - where is this going?"
+
+Today vs tomorrow:
+- "Right now, AI helps with one task at a time"
+- "But soon, you'll describe an entire analysis workflow"
+- "'Take these images, segment the cells, quantify fluorescence, compare to controls, generate publication figures'"
+- "One request, entire pipeline"
+
+Examples:
+- Multi-step: "Chain together preprocessing, analysis, visualization"
+- Optimization: "AI tries different parameters, finds best results"
+- Scale: "Datasets that don't fit on one machine"
+- Discovery: "AI notices patterns you might have missed"
+
+Your role shift:
+- "You become the scientist who asks questions"
+- "Not the programmer who debugs bash scripts"
+- "Focus on WHAT you want to know, not HOW to compute it"
+
+Timing: 1 minute - inspire them!
+-->
+
 ---
 
 # Part 3: Next Steps You Can Take
 *Improve Your Scientific Throughput, Reproducibility, and Impact*
+
+<!-- 
+SPEAKER NOTES - Part 3 Transition (30 seconds)
+
+Final section:
+- "We're in the home stretch - let's talk about YOUR next steps"
+- Check time - should be around 19-20 minutes
+- "How do you actually GET STARTED with this?"
+
+Timing: 30 seconds
+-->
 
 ---
 
@@ -254,6 +664,31 @@ AI agent:
 - 📋 **NGFF Standard:** https://ngff.openmicroscopy.org
 - 📚 **Community:** Open Microscopy Environment (OME)
 
+<!-- 
+SPEAKER NOTES - Resources (45 seconds)
+
+Point to resources:
+- "First, bookmark these links"
+- "Everything I've shown you is documented here"
+
+ngff-zarr docs:
+- "Start here - we have tutorials, examples, API docs"
+- "Installation is pip install ngff-zarr"
+
+OME-NGFF spec:
+- "For the deep dive into the format specification"
+- "This is the authoritative source"
+
+Community:
+- "Join the OME community - forums, mailing lists"
+- "People are friendly and helpful!"
+
+Action:
+- "Take out your phones, snap a picture of these URLs"
+
+Timing: 45 seconds - practical and actionable
+-->
+
 ---
 
 ## Tools for Every Scientist
@@ -264,6 +699,29 @@ AI agent:
 * Integration with Jupyter notebooks and workflows
 * Scientific Python ecosystem compatibility (NumPy, Dask, Xarray)
 * Custom analysis pipelines built on OME-NGFF
+
+<!-- 
+SPEAKER NOTES - Python Library (45 seconds)
+
+For Python users:
+- "If you're a Python person, we've got you covered"
+- "The library integrates seamlessly with your existing stack"
+
+Jupyter:
+- "Works great in notebooks - try it interactively"
+- "See the examples in our docs"
+
+Ecosystem:
+- "Built on NumPy, works with Dask for parallel processing"
+- "Xarray for labeled arrays"
+- "Familiar tools, OME-NGFF superpowers"
+
+Custom pipelines:
+- "Use it as a building block for your own workflows"
+- "Not locked into our way of doing things"
+
+Timing: 45 seconds
+-->
 
 ---
 
@@ -277,6 +735,29 @@ AI agent:
 
 **📝 Note:** *OME-Zarr in cloud environments* by Eric Perlman this afternoon will cover cloud-based imaging workflows in detail!
 
+<!-- 
+SPEAKER NOTES - TypeScript Library (45 seconds)
+
+Web developers:
+- "We also have a TypeScript/JavaScript version"
+- "Build web apps, visualization tools"
+
+Browser-based:
+- "Run OME-NGFF analysis right in the browser"
+- "No server needed for many tasks"
+
+Cloud deployment:
+- "Deploy to Vercel, Netlify, anywhere"
+- "Share interactive visualizations with collaborators"
+
+Cross-reference:
+- "And speaking of cloud - Eric Perlman's talk this afternoon"
+- "Will go deep on cloud workflows"
+- "Highly recommend attending!"
+
+Timing: 45 seconds
+-->
+
 ---
 
 ## ⨍ideus labs: Your Support Partner
@@ -286,6 +767,25 @@ AI agent:
 - 🌟 OME-NGFF ecosystem contributors
 - 🤝 Open science advocates
 
+<!-- 
+SPEAKER NOTES - fideus Intro (30 seconds)
+
+Introduce fideus:
+- "Quick word about who we are"
+- "We're fideus labs - this is our passion"
+
+What we do:
+- "We specialize in biomedical imaging infrastructure"
+- "Active contributors to OME-NGFF and related tools"
+- "Committed to open science and open source"
+
+Not a sales pitch:
+- "We're here to help the community"
+- "Whether that's with us or on your own"
+
+Timing: 30 seconds - brief and humble
+-->
+
 ---
 
 ## ⨍ideus labs: Your Support Partner
@@ -293,6 +793,20 @@ AI agent:
 **What we offer:**
 - 📚 Training and consultation services
 - 🔗 Integration support for your existing workflows
+
+<!-- 
+SPEAKER NOTES - fideus Services (30 seconds)
+
+What we can help with:
+- "If you need help getting started or integrating OME-NGFF"
+- "We offer training, consulting, integration support"
+
+Keep it brief:
+- "More details at our website"
+- "Happy to chat after the talk or during breaks"
+
+Timing: 30 seconds
+-->
 
 ---
 
@@ -304,6 +818,21 @@ AI agent:
 - 📰 Subscribe to our newsletter: [https://fideus.io/subscribe](https://fideus.io/subscribe)
 - 🐙 Follow our GitHub: [https://github.com/fideus-labs](https://github.com/fideus-labs)
 
+<!-- 
+SPEAKER NOTES - Contact Info (30 seconds)
+
+How to reach us:
+- "All our contact info is here"
+- "Email is best for specific questions"
+- "Newsletter for updates on OME-NGFF tools and tutorials"
+- "GitHub for code and issues"
+
+Action:
+- "Snap another photo if you want these links"
+
+Timing: 30 seconds
+-->
+
 ---
 
 ## Your Path Forward
@@ -312,6 +841,29 @@ AI agent:
 1. **Explore** the ngff-zarr documentation and examples
 2. **Try** converting a sample image to OME-NGFF
 3. **Evaluate** whether OME-NGFF fits your workflow
+
+<!-- 
+SPEAKER NOTES - Immediate Actions (45 seconds)
+
+This week:
+- "Okay, concrete actions you can take THIS WEEK"
+
+Explore:
+- "Tonight in your hotel room - browse the docs"
+- "Look at the examples, see if they match your use cases"
+
+Try it:
+- "Tomorrow - take ONE image and convert it"
+- "Just pip install ngff-zarr and try the basic tutorial"
+- "5 minutes to get started"
+
+Evaluate:
+- "Think about YOUR workflow - where would this help?"
+- "What's your biggest pain point with image formats?"
+- "Could OME-NGFF solve it?"
+
+Timing: 45 seconds
+-->
 
 ---
 
@@ -322,6 +874,33 @@ AI agent:
 2. **Integrate** with your existing analysis pipelines
 3. **Measure** improvements in efficiency and reproducibility
 
+<!-- 
+SPEAKER NOTES - Short-term Goals (45 seconds)
+
+Next month or two:
+- "Over the next month or two, here's what success looks like"
+
+Pilot:
+- "Start small - one project, one dataset"
+- "Learn the workflows without disrupting everything"
+- "Get your team comfortable with the tools"
+
+Integrate:
+- "Connect OME-NGFF to your existing analysis"
+- "You don't have to rebuild everything"
+- "It should ENHANCE your workflow, not replace it"
+
+Measure:
+- "Track the benefits - time saved, errors reduced"
+- "Build the case for broader adoption"
+- "Data-driven decisions about infrastructure"
+
+Question:
+- "What would be a good pilot project in YOUR lab?"
+
+Timing: 45 seconds
+-->
+
 ---
 
 ## Your Path Forward
@@ -330,6 +909,31 @@ AI agent:
 1. **Scale** your analysis to larger datasets
 2. **Leverage** AI and automation for complex workflows
 3. **Contribute** back to the community
+
+<!-- 
+SPEAKER NOTES - Long-term Vision (45 seconds)
+
+Looking ahead:
+- "And looking 6-12 months out, imagine this..."
+
+Scale:
+- "Datasets that seemed impossible become routine"
+- "Multi-terabyte analyses running in the cloud"
+- "Your science limited by questions, not infrastructure"
+
+Leverage AI:
+- "AI assistants handling the grunt work"
+- "You focus on interpretation and discovery"
+- "Automation that actually works"
+
+Contribute:
+- "And here's what's beautiful - as you build tools and workflows"
+- "Share them back with the community"
+- "Make OME-NGFF better for everyone"
+- "That's how open science works"
+
+Timing: 45 seconds
+-->
 
 ---
 
@@ -342,6 +946,36 @@ AI agent:
 ✅ **ngff-zarr** makes powerful bioimage analysis accessible to everyone
 
 ✅ **Your impact multiplies** when you combine AI, open data, and reproducible science
+
+<!-- 
+SPEAKER NOTES - Key Takeaways (1 minute)
+
+Summarize the message:
+- "Let me leave you with four key points"
+
+Read each one with emphasis:
+1. OME-NGFF:
+   - "This format was DESIGNED for the AI era"
+   - "Cloud-ready, open, future-proof"
+
+2. MCP:
+   - "The bridge that makes AI assistants actually useful"
+   - "Standard protocol, works everywhere"
+
+3. ngff-zarr:
+   - "Tools you can use TODAY"
+   - "Free, open source, ready to go"
+
+4. Your impact:
+   - "This isn't just about convenience"
+   - "It's about MULTIPLYING your scientific impact"
+   - "Better reproducibility, broader collaboration, faster discovery"
+
+Pause:
+- "These four things together are transformative"
+
+Timing: 1 minute - should be at ~24 minutes total
+-->
 
 ---
 
@@ -356,3 +990,35 @@ AI agent:
 - Your specific imaging challenges
 - Integration questions for your workflow
 - How OME-NGFF can accelerate your research
+
+<!-- 
+SPEAKER NOTES - Questions & Discussion (1+ minute, flexible)
+
+Final thoughts:
+- "That's what I wanted to share with you today"
+- "We should have a few minutes for questions"
+- Check actual time - adjust accordingly
+
+Open the floor:
+- "What questions do you have?"
+- "Anyone have a specific use case you want to discuss?"
+- "Concerns about adoption or integration?"
+
+Be ready for common questions:
+- Performance compared to other formats
+- Existing tool compatibility
+- Learning curve for teams
+- Cloud storage costs
+- Production readiness
+
+Encourage engagement:
+- "Don't be shy - if you're wondering it, others are too"
+- "I'll also be around during breaks if you want to chat more"
+
+Thank them:
+- "Thank you for your attention"
+- "Excited to see what you build with these tools"
+- "Let's make bioimage analysis better together"
+
+Timing: Flexible - use remaining time, but don't run over!
+-->
