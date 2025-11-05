@@ -222,16 +222,6 @@ AI agent:
 
 ---
 
-## Key Capabilities in Action
-
-### 🔄 Workflow Integration
-* Combine multiple operations seamlessly
-* Chain conversions with analysis
-* Maintain reproducibility across runs through scripts
-* Generate documented, auditable workflows
-
----
-
 ## The Future of Scientific Image Analysis
 
 **Today:** AI helps with individual tasks
@@ -285,7 +275,7 @@ AI agent:
 * Web applications for image analysis
 * Cloud-native deployment options
 
-*Note: Another talk this afternoon will cover cloud-based imaging workflows in detail!*
+**📝 Note:** *OME-Zarr in cloud environments* by Eric Perlman this afternoon will cover cloud-based imaging workflows in detail!
 
 ---
 
