@@ -1,7 +1,7 @@
 [workspace]
 authors = ["Matt McCormick <matt@fideus.io>"]
 channels = ["conda-forge"]
-name = "scientific-ai-omezarr-tutorial"
+name = "ome-ngff-scientific-ai"
 platforms = ["win-64", "linux-64", "osx-arm64"]
 version = "1.0.0"
 
@@ -13,7 +13,7 @@ convert = "ngff-zarr -i data/vis_male.nrrd -o vis_male.ome.zarr"
 
 # Document exports
 export-html = "npx -y @marp-team/marp-cli@latest README.md -o index.html"
-export-pdf = "npx -y @marp-team/marp-cli@latest README.md -o scientific-ai-omezarr-tutorial.pdf"
+export-pdf = "npx -y @marp-team/marp-cli@latest README.md -o ome-ngff-scientific-ai.pdf"
 
 [dependencies]
 python = "3.11.*"

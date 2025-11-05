@@ -6,7 +6,7 @@ paginate: true
 backgroundColor: #fff
 color: #333
 header: 'OME-NGFF and Scientific AI'
-footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | OME-NGFF Workshop 2025'
+footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | OME-NGFF Workshop 2025'
 ---
 
 <style>
