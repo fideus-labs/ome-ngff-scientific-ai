@@ -33,7 +33,7 @@ OME-NGFF Workshop 2025
 
 </div>
 
-<!-- 
+<!--
 SPEAKER NOTES - Title Slide (2 minutes)
 
 Welcome and Introduction:
@@ -46,6 +46,156 @@ Set the stage:
 - Build excitement about the practical applications they'll see
 
 Timing: Keep this brief - 2 minutes max. Energy should be high!
+-->
+
+---
+
+## The Challenge Every Lab Faces
+
+**A familiar scenario:**
+
+Your postdoc just collected 50 microscopy images from a critical experiment
+
+**The analysis needed:**
+* Quantify cell populations across treatment conditions
+* Segment nuclei, measure fluorescence intensity
+* Compare treated vs control groups
+* Generate statistical analysis and publication-quality figures
+
+**How long will this take?**
+
+<!--
+SPEAKER NOTES - The Challenge Part 1: Setup (45 seconds)
+
+Set the scene:
+- "Let me start with a situation I bet you've experienced..."
+- "Your postdoc comes to you excited - they've got the microscopy results"
+- "50 beautiful images from weeks of careful experiments"
+
+The requirements:
+- "Standard quantitative analysis - nothing exotic"
+- Point to each bullet
+- "Segment nuclei, quantify fluorescence, run statistics"
+- "Exactly the kind of thing you need for every paper"
+
+The question:
+- "So here's the question - how long is this going to take?"
+- Pause - let them think about their own experience
+- "Let's look at the reality..."
+
+Timing: 45 seconds - build anticipation
+-->
+
+---
+
+## The Traditional Workflow
+
+**Without AI assistance:**
+
+```
+Week 1: Write analysis scripts, debug edge cases
+  → Install packages, troubleshoot dependencies
+  → Test on sample images, find parameter issues
+  → Different images need different parameters
+  
+Week 2: Batch process, fix failures, re-run
+  → Image 23 fails (different dimensions)
+  → Image 37 fails (different bit depth)
+  → Start over with better error handling
+  
+Week 3: Statistical analysis, figure generation
+  → Wrangle data into R/Python
+  → Realize you need to re-extract some measurements
+  → Iterate on figures for publication
+
+⏱️ 3+ weeks of precious postdoc time
+```
+
+<!--
+SPEAKER NOTES - The Challenge Part 2: Traditional Workflow (1 minute)
+
+Walk through the pain:
+- "Here's how it typically goes - be honest, this will sound familiar..."
+
+Week 1 - Scripts:
+- "First week - get the analysis code working"
+- "Install packages, resolve conflicts, debug"
+- "Parameters that work for image 1 fail on image 15"
+- "Back to parameter tuning"
+
+Week 2 - Batch Processing:
+- "Second week - try to run everything"
+- "And of course, image 23 fails - different dimensions"
+- "Image 37 - different bit depth"
+- "Add error handling, start over"
+
+Week 3 - Analysis:
+- "Third week - finally getting results out"
+- "Get data into your stats package"
+- "Realize you forgot to extract one measurement"
+- "Re-run from the beginning"
+
+The cost:
+- "Three weeks - best case scenario"
+- "That's if everything goes relatively smoothly"
+- "Sound familiar to anyone?"
+- Wait for nods/laughs
+
+Timing: 1 minute - make them feel it
+-->
+
+---
+
+## The AI-Powered Future
+
+**With agentic AI + OME-NGFF:**
+
+```
+Natural language request:
+"Analyze these 50 microscopy images: segment DAPI-stained nuclei,
+quantify GFP intensity per cell, compare treated vs control,
+and generate summary statistics with publication figures"
+```
+
+**What happens:**
+* AI converts images to optimized OME-NGFF format
+* Performs segmentation with auto-tuned parameters
+* Extracts measurements with structured metadata
+* Runs appropriate statistical tests
+* Generates publication-ready figures
+* **Documents the entire workflow for reproducibility**
+
+✅ **Results in hours, not weeks - fully automated and reproducible**
+
+<!--
+SPEAKER NOTES - The Challenge Part 3: AI Future (45 seconds)
+
+The transformation:
+- "Now imagine a different reality..."
+- "Instead of three weeks of coding and debugging..."
+
+Show the request:
+- Read it slowly: "Analyze these 50 microscopy images..."
+- "That's it. That's all the postdoc DOES."
+- "Just describe what they need in plain English"
+
+What the AI does:
+- Go through each bullet quickly
+- "The AI handles ALL of this automatically"
+- "Format conversion, segmentation, statistics, figures"
+- Emphasize: "And documents everything"
+
+The payoff:
+- "Hours instead of weeks"
+- "Fully automated, fully reproducible"
+- "Your postdoc gets three weeks back"
+- "Three weeks closer to publication"
+
+Question:
+- "What would YOUR lab do with that time back?"
+- Pause before moving to agenda
+
+Timing: 45 seconds - end on a high note
 -->
 
 ---
@@ -63,7 +213,7 @@ Timing: Keep this brief - 2 minutes max. Energy should be high!
 3. **Next Steps You Can Take** (10 min)
    - Improve your scientific throughput, reproducibility, and impact
 
-<!-- 
+<!--
 SPEAKER NOTES - Agenda (1 minute)
 
 Roadmap:
@@ -85,7 +235,7 @@ Timing: 1 minute - keep it moving!
 # Part 1: Scientific AI and Your Data
 *Why OME-NGFF for Agentic AI*
 
-<!-- 
+<!--
 SPEAKER NOTES - Part 1 Transition (30 seconds)
 
 Transition:
@@ -107,7 +257,7 @@ Timing: Quick transition - 30 seconds
 
 **The Challenge:** *How do we give AI meaningful access to your scientific imaging data?*
 
-<!-- 
+<!--
 SPEAKER NOTES - AI Revolution (1.5 minutes)
 
 Context setting:
@@ -142,7 +292,7 @@ Timing: 1.5 minutes - this is foundational!
 
 **Result:** AI that understands your science and automates complex analyses
 
-<!-- 
+<!--
 SPEAKER NOTES - Agentic AI Definition (1.5 minutes)
 
 Break it down clearly:
@@ -172,7 +322,7 @@ Timing: 1.5 minutes - enthusiasm is key here!
 * **Hierarchical structure** - AI can reason about data at multiple scales
 * **Open standard** - works everywhere your AI runs
 
-<!-- 
+<!--
 SPEAKER NOTES - OME-NGFF + AI Part 1: Cloud Architecture (1 minute)
 
 Connect to AI capabilities:
@@ -202,7 +352,7 @@ Timing: 1 minute - keep pace brisk
 * **Standards-compliant** - AI knows what it's working with
 * **Ecosystem of tools** - interoperability enables complex workflows
 
-<!-- 
+<!--
 SPEAKER NOTES - OME-NGFF + AI Part 2: Metadata (45 seconds)
 
 Rich metadata advantage:
@@ -228,7 +378,7 @@ Timing: 45 seconds - building momentum
 * **Community-driven** - growing ecosystem of tools and support
 * **Reproducible science** - data format ensures long-term accessibility
 
-<!-- 
+<!--
 SPEAKER NOTES - OME-NGFF + AI Part 3: Open Standards (45 seconds)
 
 Open science connection:
@@ -266,7 +416,7 @@ Automated, Reproducible Workflows
 - 🎯 Intelligent parameter optimization
 - 🚀 Batch processing without manual intervention
 
-<!-- 
+<!--
 SPEAKER NOTES - The Combination (1 minute)
 
 Bring it together:
@@ -295,7 +445,7 @@ Timing: 1 minute - this is the payoff slide!
 # Part 2: Introduction to the ngff-zarr MCP Server
 *AI-Powered Bioimage Conversion and Batch Processing*
 
-<!-- 
+<!--
 SPEAKER NOTES - Part 2 Transition (30 seconds)
 
 Energy shift:
@@ -327,7 +477,7 @@ Your Scientific Data & Tools
 - 🔧 Easy integration - no custom coding required
 - 🔄 Bidirectional communication - rich interaction model
 
-<!-- 
+<!--
 SPEAKER NOTES - MCP Introduction (1.5 minutes)
 
 What is MCP:
@@ -361,7 +511,7 @@ Timing: 1.5 minutes - this is new to most people
 * The **ngff-zarr MCP Server** exposes this toolkit to agentic AI systems
 * **AI-ready interface** - natural language commands to scientific operations
 
-<!-- 
+<!--
 SPEAKER NOTES - ngff-zarr Introduction (1 minute)
 
 Introduce the tool:
@@ -391,7 +541,7 @@ Timing: 1 minute
 - 📝 **Inspect** multiscale pyramids, metadata, and data structure
 - 📦 **Batch process** large collections of images with reproducible settings
 
-<!-- 
+<!--
 SPEAKER NOTES - Capabilities (1.5 minutes)
 
 Go through each capability with examples:
@@ -425,52 +575,62 @@ Timing: 1.5 minutes - let each capability sink in
 
 ---
 
-## Real-World Example: Batch Conversion
+## Real-World Example: Quantitative Analysis Pipeline
+
+**Remember our postdoc with 50 images?**
 
 **Without agentic AI:**
 ```
-Manual process for 50 TIFF files:
-1. Write conversion script
-2. Optimize parameters (trial & error)
-3. Run conversions
-4. Verify results
-5. Debug failures
-⏱️ Hours or days of work
+Traditional manual workflow:
+1. Convert images to working format (troubleshoot compatibility)
+2. Write segmentation script (tune parameters per image)
+3. Extract measurements (debug data export)
+4. Statistical analysis (wrangle data formats)
+5. Generate figures (iterate on visualization)
+6. Document everything (if you remember what you did)
+⏱️ 2-3 weeks of iteration and debugging
 ```
 
-<!-- 
-SPEAKER NOTES - Before AI Example (1 minute)
+<!--
+SPEAKER NOTES - Before AI Example (1.5 minutes)
 
-Make it relatable:
-- "Let's be honest about how this usually goes..."
-- Walk through with pain points:
+Bring back the scenario:
+- "Remember our postdoc? Let's walk through their typical workflow..."
+- Make it painful but relatable
 
-1. Write script:
-   - "You dig through documentation, copy-paste examples"
-   - "Spend an hour just getting the syntax right"
+Step by step pain:
+1. Format conversion:
+   - "First hurdle - get images into format the analysis tools can read"
+   - "Proprietary microscope format doesn't work with Python tools"
+   - "Spend half a day on format conversion alone"
 
-2. Optimize:
-   - "Then the fun begins - what chunk size? Which codec?"
-   - "You try a few, compare file sizes, check performance"
-   - "Another hour or two gone"
+2. Segmentation:
+   - "Then the real work - write segmentation code"
+   - "Parameters that work for image 1 fail on image 15"
+   - "Back to parameter tuning, over and over"
 
-3. Run:
-   - "Finally hit enter... and wait"
-   - "Hope nothing breaks"
+3. Measurements:
+   - "Finally getting data out - but wait, export format issues"
+   - "CSV? JSON? How to link measurements to metadata?"
 
-4. Verify:
-   - "Did it actually work? Are the dimensions right?"
-   - "Is the metadata preserved?"
+4. Statistics:
+   - "Now wrangle everything into R or Python for stats"
+   - "More data format conversion, more potential for errors"
 
-5. Debug:
-   - "Oh good, file 23 failed because of an edge case..."
-   - "Start over from step 1"
+5. Figures:
+   - "Generate plots, realize you need different groupings"
+   - "Re-run everything from step 3"
 
-Question:
-- "Sound familiar to anyone?"
-- Laugh together about the pain
+6. Documentation:
+   - "And did you write down all those parameters?"
+   - "Good luck reproducing this in 6 months"
 
-Timing: 1 minute - build the contrast for next slide
+The reality:
+- "This is 2-3 weeks of your postdoc's time"
+- "And that's if everything goes relatively smoothly"
+- "We've all been there"
+
+Timing: 1.5 minutes - make them FEEL the pain
 -->
 
 ---
@@ -478,19 +638,21 @@ Timing: 1 minute - build the contrast for next slide
 **With agentic AI + ngff-zarr MCP:**
 ```
 Natural language request:
-"Convert my 50 microscopy images to OME-NGFF
-with optimal compression for my storage constraints"
+"Analyze these 50 microscopy images: segment DAPI-stained nuclei,
+quantify GFP intensity per cell, compare treated vs control groups,
+and generate summary statistics with publication figures"
 
 AI agent:
-1. Analyzes sample image
-2. Determines optimal chunking
-3. Generates conversion script
-4. Executes with progress tracking
-5. Reports results
-✅ Automated, reproducible, minutes
+1. Converts to OME-NGFF (optimal format selection)
+2. Performs segmentation (auto-tunes parameters)
+3. Extracts measurements (structured metadata)
+4. Runs statistical comparisons (appropriate tests)
+5. Generates figures (publication-ready)
+6. Documents entire workflow (fully reproducible)
+✅ Results in hours, not weeks - fully automated and documented
 ```
 
-<!-- 
+<!--
 SPEAKER NOTES - After AI Example (1.5 minutes)
 
 The contrast:
@@ -532,7 +694,7 @@ Timing: 1.5 minutes - this is the "wow" moment
 * Generates multiscale pyramids without artifacts
 * Optimizes for your hardware and access patterns
 
-<!-- 
+<!--
 SPEAKER NOTES - Intelligent Conversion (1 minute)
 
 Deep dive on intelligence:
@@ -567,7 +729,7 @@ Timing: 1 minute
 * Plan batch operations with resource awareness
 * Validate results automatically
 
-<!-- 
+<!--
 SPEAKER NOTES - Analysis and Reporting (1 minute)
 
 Beyond conversion:
@@ -607,7 +769,7 @@ Timing: 1 minute - moving faster now, check time (should be ~18-19 min)
 
 **Your role:** Guide the AI with scientific questions, not technical commands
 
-<!-- 
+<!--
 SPEAKER NOTES - Future Vision (1 minute)
 
 Look ahead:
@@ -638,7 +800,7 @@ Timing: 1 minute - inspire them!
 # Part 3: Next Steps You Can Take
 *Improve Your Scientific Throughput, Reproducibility, and Impact*
 
-<!-- 
+<!--
 SPEAKER NOTES - Part 3 Transition (30 seconds)
 
 Final section:
@@ -664,7 +826,7 @@ Timing: 30 seconds
 - 📋 **NGFF Standard:** https://ngff.openmicroscopy.org
 - 📚 **Community:** Open Microscopy Environment (OME)
 
-<!-- 
+<!--
 SPEAKER NOTES - Resources (45 seconds)
 
 Point to resources:
@@ -700,7 +862,7 @@ Timing: 45 seconds - practical and actionable
 * Scientific Python ecosystem compatibility (NumPy, Dask, Xarray)
 * Custom analysis pipelines built on OME-NGFF
 
-<!-- 
+<!--
 SPEAKER NOTES - Python Library (45 seconds)
 
 For Python users:
@@ -735,7 +897,7 @@ Timing: 45 seconds
 
 **📝 Note:** *OME-Zarr in cloud environments* by Eric Perlman this afternoon will cover cloud-based imaging workflows in detail!
 
-<!-- 
+<!--
 SPEAKER NOTES - TypeScript Library (45 seconds)
 
 Web developers:
@@ -760,14 +922,19 @@ Timing: 45 seconds
 
 ---
 
-## ⨍ideus labs: Your Support Partner
+## ⨍ideus labs
 
 **Who we are:**
 - 🧬 Biomedical imaging specialists
 - 🌟 OME-NGFF ecosystem contributors
 - 🤝 Open science advocates
 
-<!-- 
+**What we offer:**
+- 📚 Training and consultation services
+- 🔗 Integration support for your existing workflows
+
+**Connect:** 📧 Email: [info@fideus.io](mailto:info@fideus.io) 🌐 Website: [https://fideus.io](https://fideus.io)
+<!--
 SPEAKER NOTES - fideus Intro (30 seconds)
 
 Introduce fideus:
@@ -788,13 +955,11 @@ Timing: 30 seconds - brief and humble
 
 ---
 
-## ⨍ideus labs: Your Support Partner
-
 **What we offer:**
 - 📚 Training and consultation services
 - 🔗 Integration support for your existing workflows
 
-<!-- 
+<!--
 SPEAKER NOTES - fideus Services (30 seconds)
 
 What we can help with:
@@ -810,15 +975,13 @@ Timing: 30 seconds
 
 ---
 
-## ⨍ideus labs: Your Support Partner
-
 **Connect with us:**
 - 📧 Email: [info@fideus.io](mailto:info@fideus.io)
 - 🌐 Website: [https://fideus.io](https://fideus.io)
 - 📰 Subscribe to our newsletter: [https://fideus.io/subscribe](https://fideus.io/subscribe)
 - 🐙 Follow our GitHub: [https://github.com/fideus-labs](https://github.com/fideus-labs)
 
-<!-- 
+<!--
 SPEAKER NOTES - Contact Info (30 seconds)
 
 How to reach us:
@@ -842,7 +1005,7 @@ Timing: 30 seconds
 2. **Try** converting a sample image to OME-NGFF
 3. **Evaluate** whether OME-NGFF fits your workflow
 
-<!-- 
+<!--
 SPEAKER NOTES - Immediate Actions (45 seconds)
 
 This week:
@@ -874,7 +1037,7 @@ Timing: 45 seconds
 2. **Integrate** with your existing analysis pipelines
 3. **Measure** improvements in efficiency and reproducibility
 
-<!-- 
+<!--
 SPEAKER NOTES - Short-term Goals (45 seconds)
 
 Next month or two:
@@ -910,7 +1073,7 @@ Timing: 45 seconds
 2. **Leverage** AI and automation for complex workflows
 3. **Contribute** back to the community
 
-<!-- 
+<!--
 SPEAKER NOTES - Long-term Vision (45 seconds)
 
 Looking ahead:
@@ -947,7 +1110,7 @@ Timing: 45 seconds
 
 ✅ **Your impact multiplies** when you combine AI, open data, and reproducible science
 
-<!-- 
+<!--
 SPEAKER NOTES - Key Takeaways (1 minute)
 
 Summarize the message:
@@ -991,7 +1154,7 @@ Timing: 1 minute - should be at ~24 minutes total
 - Integration questions for your workflow
 - How OME-NGFF can accelerate your research
 
-<!-- 
+<!--
 SPEAKER NOTES - Questions & Discussion (1+ minute, flexible)
 
 Final thoughts:
