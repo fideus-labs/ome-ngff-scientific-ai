@@ -52,150 +52,65 @@ Timing: Keep this brief - 2 minutes max. Energy should be high!
 
 ## The Challenge Every Lab Faces
 
-**A familiar scenario:**
-
-Your postdoc just collected 50 microscopy images from a critical experiment
-
-**The analysis needed:**
-* Quantify cell populations across treatment conditions
-* Segment nuclei, measure fluorescence intensity
-* Compare treated vs control groups
+**Scenario:** Your postdoc just collected 50 microscopy images
+* Need to quantify cell populations across treatment conditions
+* Segment nuclei, measure fluorescence intensity, compare to controls
 * Generate statistical analysis and publication-quality figures
 
-**How long will this take?**
-
 <!--
-SPEAKER NOTES - The Challenge Part 1: Setup (45 seconds)
+SPEAKER NOTES - The Challenge (0.5 minutes)
 
-Set the scene:
+Make it visceral:
 - "Let me start with a situation I bet you've experienced..."
-- "Your postdoc comes to you excited - they've got the microscopy results"
-- "50 beautiful images from weeks of careful experiments"
+- "Your postdoc is excited - finally got those microscopy results"
+- "50 beautiful images, now just need the quantification..."
 
-The requirements:
-- "Standard quantitative analysis - nothing exotic"
-- Point to each bullet
-- "Segment nuclei, quantify fluorescence, run statistics"
-- "Exactly the kind of thing you need for every paper"
-
-The question:
-- "So here's the question - how long is this going to take?"
-- Pause - let them think about their own experience
-- "Let's look at the reality..."
-
-Timing: 45 seconds - build anticipation
 -->
-
 ---
 
-## The Traditional Workflow
+## The Challenge Every Lab Faces
 
-**Without AI assistance:**
-
+**Without AI:**
 ```
 Week 1: Write analysis scripts, debug edge cases
-  → Install packages, troubleshoot dependencies
-  → Test on sample images, find parameter issues
-  → Different images need different parameters
-  
 Week 2: Batch process, fix failures, re-run
-  → Image 23 fails (different dimensions)
-  → Image 37 fails (different bit depth)
-  → Start over with better error handling
-  
 Week 3: Statistical analysis, figure generation
-  → Wrangle data into R/Python
-  → Realize you need to re-extract some measurements
-  → Iterate on figures for publication
-
 ⏱️ 3+ weeks of precious postdoc time
 ```
 
-<!--
-SPEAKER NOTES - The Challenge Part 2: Traditional Workflow (1 minute)
-
-Walk through the pain:
-- "Here's how it typically goes - be honest, this will sound familiar..."
-
-Week 1 - Scripts:
-- "First week - get the analysis code working"
-- "Install packages, resolve conflicts, debug"
-- "Parameters that work for image 1 fail on image 15"
-- "Back to parameter tuning"
-
-Week 2 - Batch Processing:
-- "Second week - try to run everything"
-- "And of course, image 23 fails - different dimensions"
-- "Image 37 - different bit depth"
-- "Add error handling, start over"
-
-Week 3 - Analysis:
-- "Third week - finally getting results out"
-- "Get data into your stats package"
-- "Realize you forgot to extract one measurement"
-- "Re-run from the beginning"
-
-The cost:
-- "Three weeks - best case scenario"
-- "That's if everything goes relatively smoothly"
-- "Sound familiar to anyone?"
-- Wait for nods/laughs
-
-Timing: 1 minute - make them feel it
--->
-
----
-
-## The AI-Powered Future
-
-**With agentic AI + OME-NGFF:**
-
+**With AI + OME-NGFF:**
 ```
-Natural language request:
-"Analyze these 50 microscopy images: segment DAPI-stained nuclei,
+"Analyze these 50 images: segment DAPI-stained nuclei,
 quantify GFP intensity per cell, compare treated vs control,
 and generate summary statistics with publication figures"
+✅ Results in hours, fully reproducible
 ```
 
-**What happens:**
-* AI converts images to optimized OME-NGFF format
-* Performs segmentation with auto-tuned parameters
-* Extracts measurements with structured metadata
-* Runs appropriate statistical tests
-* Generates publication-ready figures
-* **Documents the entire workflow for reproducibility**
-
-✅ **Results in hours, not weeks - fully automated and reproducible**
-
 <!--
-SPEAKER NOTES - The Challenge Part 3: AI Future (45 seconds)
+SPEAKER NOTES - The Challenge (1.5 minutes)
 
-The transformation:
-- "Now imagine a different reality..."
-- "Instead of three weeks of coding and debugging..."
+The old way:
+- "So they spend the next THREE WEEKS wrestling with analysis"
+- "Writing scripts, debugging when image 23 has different dimensions"
+- "Re-running everything because they forgot to save parameters"
+- "Sound familiar?"
 
-Show the request:
-- Read it slowly: "Analyze these 50 microscopy images..."
-- "That's it. That's all the postdoc DOES."
-- "Just describe what they need in plain English"
-
-What the AI does:
-- Go through each bullet quickly
-- "The AI handles ALL of this automatically"
-- "Format conversion, segmentation, statistics, figures"
-- Emphasize: "And documents everything"
-
-The payoff:
+The new way:
+- "Now imagine instead - they just DESCRIBE what they need"
+- "Natural language, like talking to a collaborator"
+- "The AI handles the technical details, they review the results"
 - "Hours instead of weeks"
-- "Fully automated, fully reproducible"
-- "Your postdoc gets three weeks back"
+
+Impact:
+- "That's three weeks your postdoc gets back for actual science"
 - "Three weeks closer to publication"
+- "And it's fully reproducible - no 'what parameters did I use?' six months later"
 
 Question:
-- "What would YOUR lab do with that time back?"
-- Pause before moving to agenda
+- "How many postdoc-weeks would YOUR lab save?"
+- Let that sink in before moving on
 
-Timing: 45 seconds - end on a high note
+Timing: 1.5 minutes - this is your hook!
 -->
 
 ---
@@ -862,6 +777,8 @@ Timing: 45 seconds - practical and actionable
 * Scientific Python ecosystem compatibility (NumPy, Dask, Xarray)
 * Custom analysis pipelines built on OME-NGFF
 
+**📝 Note:** *OME-Zarr in cloud environments* by Eric Perlman this afternoon will cover cloud-based imaging workflows in detail!
+
 <!--
 SPEAKER NOTES - Python Library (45 seconds)
 
@@ -882,6 +799,11 @@ Custom pipelines:
 - "Use it as a building block for your own workflows"
 - "Not locked into our way of doing things"
 
+Cross-reference:
+- "And speaking of cloud - Eric Perlman's talk this afternoon"
+- "Will go deep on cloud workflows"
+- "Highly recommend attending!"
+
 Timing: 45 seconds
 -->
 
@@ -894,8 +816,6 @@ Timing: 45 seconds
 - Browser-based OME-NGFF exploration
 * Web applications for image analysis
 * Cloud-native deployment options
-
-**📝 Note:** *OME-Zarr in cloud environments* by Eric Perlman this afternoon will cover cloud-based imaging workflows in detail!
 
 <!--
 SPEAKER NOTES - TypeScript Library (45 seconds)
@@ -911,11 +831,6 @@ Browser-based:
 Cloud deployment:
 - "Deploy to Vercel, Netlify, anywhere"
 - "Share interactive visualizations with collaborators"
-
-Cross-reference:
-- "And speaking of cloud - Eric Perlman's talk this afternoon"
-- "Will go deep on cloud workflows"
-- "Highly recommend attending!"
 
 Timing: 45 seconds
 -->
@@ -950,50 +865,12 @@ Not a sales pitch:
 - "We're here to help the community"
 - "Whether that's with us or on your own"
 
-Timing: 30 seconds - brief and humble
--->
-
----
-
-**What we offer:**
-- 📚 Training and consultation services
-- 🔗 Integration support for your existing workflows
-
-<!--
-SPEAKER NOTES - fideus Services (30 seconds)
-
 What we can help with:
 - "If you need help getting started or integrating OME-NGFF"
 - "We offer training, consulting, integration support"
-
-Keep it brief:
-- "More details at our website"
 - "Happy to chat after the talk or during breaks"
 
-Timing: 30 seconds
--->
-
----
-
-**Connect with us:**
-- 📧 Email: [info@fideus.io](mailto:info@fideus.io)
-- 🌐 Website: [https://fideus.io](https://fideus.io)
-- 📰 Subscribe to our newsletter: [https://fideus.io/subscribe](https://fideus.io/subscribe)
-- 🐙 Follow our GitHub: [https://github.com/fideus-labs](https://github.com/fideus-labs)
-
-<!--
-SPEAKER NOTES - Contact Info (30 seconds)
-
-How to reach us:
-- "All our contact info is here"
-- "Email is best for specific questions"
-- "Newsletter for updates on OME-NGFF tools and tutorials"
-- "GitHub for code and issues"
-
-Action:
-- "Snap another photo if you want these links"
-
-Timing: 30 seconds
+Timing: 30 seconds - brief and humble
 -->
 
 ---
