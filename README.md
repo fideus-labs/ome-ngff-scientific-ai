@@ -357,6 +357,8 @@ Timing: 1 minute - this is the payoff slide!
 
 ---
 
+![h:150 center ngff-zarr logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ngff-zarr-logo.png)
+
 # Part 2: Introduction to the ngff-zarr MCP Server
 *AI-Powered Bioimage Conversion and Batch Processing*
 
@@ -420,6 +422,8 @@ Timing: 1.5 minutes - this is new to most people
 ---
 
 ## The ngff-zarr MCP Server
+
+![h:150 center ngff-zarr logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ngff-zarr-logo.png)
 
 **What is it?**
 * [**ngff-zarr**](https://ngff-zarr.readthedocs.io) is an open-source toolkit for working with OME-NGFF data
@@ -598,6 +602,135 @@ Question:
 
 Timing: 1.5 minutes - this is the "wow" moment
 -->
+---
+
+## 🛠️ In Practice: AI-Powered Conversion
+
+<!--
+SPEAKER NOTES - In Practice Intro (15 seconds)
+
+Quick transition:
+- "Now let me show you what this looks like in practice"
+- "Three quick examples of natural language to results"
+
+Timing: 15 seconds - just a bridge
+-->
+
+---
+
+### 💬 Convert a bioimage with AI assistance
+
+Put the agent to work!
+
+In chat:
+```
+Convert the vs_male.nrrd file to OME-Zarr format and
+find the optimal compression codec for this type of data.
+```
+
+**✨ [Watch the AI agent](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-convert-output.png):**
+1. 🔍 Analyze the input file
+2. 🎯 Select appropriate parameters
+3. ⚙️ Execute the conversion
+4. 📊 Report optimization results
+
+<!--
+SPEAKER NOTES - Convert Example (45 seconds)
+
+Show the simplicity:
+- "Look at this - natural language, plain English"
+- "No command-line flags, no config files"
+- Point to the chat message: "Just describe what you want"
+
+What happens:
+- "The AI agent takes over from here"
+- "Analyzes the file - dimensions, data type, characteristics"
+- "Picks appropriate parameters automatically"
+- "Runs the conversion and tests different codecs"
+- "Tells you which one worked best and why"
+
+Demo reference:
+- "Click that link to see the actual output"
+- "You'll see the agent's reasoning process"
+
+Timing: 45 seconds
+-->
+
+---
+
+### 💬 Examine OME-Zarr contents
+
+**Ask the AI to explore:**
+
+```
+Examine the contents of carp.ome.zarr and tell me
+about its structure, dimensions, and metadata
+```
+
+**✨ [The AI agent will](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-examine-contents-output.png):**
+- 🔍 Inspect multiscale levels
+- 📏 Report spatial metadata
+- 🧩 Analyze chunk structure
+- ✨ Suggest next steps
+
+<!--
+SPEAKER NOTES - Examine Example (45 seconds)
+
+Beyond conversion:
+- "It's not just for conversion - also for exploration"
+- "Ask questions about your data in plain language"
+
+What you get:
+- "The AI inspects the multiscale pyramid structure"
+- "Reports all the spatial metadata - spacing, units, coordinates"
+- "Analyzes how the data is chunked and compressed"
+- "Even suggests what you might want to do next"
+
+Use case:
+- "Great for validating datasets before sharing"
+- "Or understanding data someone shared with you"
+
+Timing: 45 seconds
+-->
+
+---
+
+### 💬 Generate batch script
+
+**Scale up with AI automation:**
+
+```
+I have a folder of 50 similar NRRD files.
+Generate a Python script to batch convert them all
+to OME-Zarr with the same optimal settings
+```
+
+**✨ [The AI agent creates](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-generate-batch-script-output.png):**
+- 🐍 Complete Python script
+- ⚠️ Error handling
+- 📈 Progress reporting
+- 🎯 Optimized parameters from previous analysis
+
+<!--
+SPEAKER NOTES - Batch Script Example (45 seconds)
+
+Scaling up:
+- "And here's where it gets really powerful"
+- "Once you've tested on one file, scale to many"
+
+What it generates:
+- "Produces a complete, runnable Python script"
+- "Includes proper error handling - won't crash on bad files"
+- "Progress bars so you know where you are"
+- "Uses the optimal settings it learned from your test conversion"
+
+Reproducibility:
+- "Now you have a script you can run again"
+- "Share with colleagues, include in your methods"
+- "Fully documented, reproducible workflow"
+
+Timing: 45 seconds
+-->
 
 ---
 
@@ -610,28 +743,22 @@ Timing: 1.5 minutes - this is the "wow" moment
 * Optimizes for your hardware and access patterns
 
 <!--
-SPEAKER NOTES - Intelligent Conversion (1 minute)
+SPEAKER NOTES - Intelligent Conversion (45 seconds)
 
-Deep dive on intelligence:
-- "Let's talk about what 'intelligent' actually means here"
+What makes it intelligent:
+- "So what makes this 'intelligent' and not just scripted?"
+- "The AI adapts to YOUR specific data"
 
-Auto-analysis:
-- "The AI looks at your data - dimensions, bit depth, noise characteristics"
-- "It's not just blindly applying default settings"
+Examples:
+- "Looks at dimensions, bit depth, noise patterns"
+- "Chooses blosc for speed or zstd for compression based on your needs"
+- "Generates clean multiscale pyramids automatically"
+- "Optimizes for local disk vs cloud access patterns"
 
-Codec selection:
-- "Based on your data type, it might choose blosc for speed or zstd for size"
-- "It understands the tradeoffs"
+Bottom line:
+- "It makes informed decisions, not just defaults"
 
-Multiscale:
-- "Generates pyramids with proper downsampling - no aliasing artifacts"
-- "You get high-quality visualization automatically"
-
-Optimization:
-- "Even considers your hardware - local disk vs cloud storage"
-- "Different access patterns need different chunk sizes"
-
-Timing: 1 minute
+Timing: 45 seconds
 -->
 
 ---
@@ -645,29 +772,21 @@ Timing: 1 minute
 * Validate results automatically
 
 <!--
-SPEAKER NOTES - Analysis and Reporting (1 minute)
+SPEAKER NOTES - Analysis and Reporting (45 seconds)
 
 Beyond conversion:
-- "But the ngff-zarr MCP server isn't just for conversion"
-- "It's also a powerful analysis tool"
+- "Also handles inspection, validation, planning"
 
-Inspection:
-- "Ask it to describe your multiscale structure"
-- "Get detailed reports on metadata, dimensions, chunk sizes"
+Key features:
+- "Describes your multiscale structure in detail"
+- "Generates scripts for reproducibility"
+- "Estimates resources for batch jobs"
+- "Validates outputs before you share"
 
-Script generation:
-- "Need a script for later? It can generate that"
-- "Python, shell scripts, whatever you need"
+Quick check:
+- Check time - should be around 18-19 minutes
 
-Resource awareness:
-- "Planning a big batch job? It can estimate time and space requirements"
-- "Helps you plan cloud compute costs before you run"
-
-Validation:
-- "And it validates outputs automatically"
-- "Catches problems before you move to the next step"
-
-Timing: 1 minute - moving faster now, check time (should be ~18-19 min)
+Timing: 45 seconds
 -->
 
 ---
