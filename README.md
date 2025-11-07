@@ -38,12 +38,10 @@ SPEAKER NOTES - Title Slide (2 minutes)
 
 Welcome and Introduction:
 - Introduce yourself warmly
-- "How many of you are already working with OME-NGFF in your research?"
 - "And who here has experimented with AI assistants like ChatGPT or Claude in their scientific work?"
 
 Set the stage:
 - "Today I want to show you how these two powerful technologies - OME-NGFF and AI - are converging to transform how we work with bioimage data"
-- Build excitement about the practical applications they'll see
 
 Timing: Keep this brief - 2 minutes max. Energy should be high!
 -->

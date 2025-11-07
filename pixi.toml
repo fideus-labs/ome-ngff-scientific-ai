@@ -6,6 +6,9 @@ platforms = ["win-64", "linux-64", "osx-arm64"]
 version = "1.0.0"
 
 [tasks]
+# Start development server in watch mode and save HTML output.
+start = "npx -y @marp-team/marp-cli@latest -s -w ."
+
 # Exercises from the tutorial
 convert = "ngff-zarr -i data/vis_male.nrrd -o vis_male.ome.zarr"
 "convert-ome-zarr-0.5" = "ngff-zarr -i data/carp.nrrd -o carp.ome.zarr --ome-zarr-version 0.5"
