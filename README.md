@@ -666,7 +666,7 @@ Demo reference:
 What you get:
 - "The AI inspects the multiscale pyramid structure"
 - "Reports all the spatial metadata - spacing, units, coordinates"
-- "Analyzes how the data is chunked and compressed"
+- "Analyzes how the data is chunked and compressed for efficient handling of petabyte datasets"
 - "In the future, it could even suggest what you might want to do next"
 
 Use case:
@@ -766,6 +766,7 @@ Beyond conversion:
 Key features:
 - "Describes your multiscale structure in detail"
 - "Generates scripts for reproducibility"
+- "We are TRANSFERRING some of the BURDEN of REPRODUCIBILITY from a busy postdoc to the AI agent"
 - "Validates outputs before you share"
 
 Quick check:
@@ -826,145 +827,6 @@ Final section:
 - "How do you actually GET STARTED with this?"
 
 Timing: 30 seconds
--->
-
----
-
-## Getting Started with OME-NGFF
-
-### 📚 Resources and Documentation
-
-**ngff-zarr Project:**
-- 📖 **Documentation:**: https://ngff-zarr.readthedocs.io
-  -  Comprehensive guides and API reference
-- 📂 **GitHub:** https://github.com/fideus-labs/ngff-zarr
-
-**OME-NGFF Specification:**
-- 📋 **NGFF Standard:** https://ngff.openmicroscopy.org
-- 📚 **Community:** Open Microscopy Environment (OME)
-
-<!--
-SPEAKER NOTES - Resources (45 seconds)
-
-Point to resources:
-- "Everything I've shown you is documented here"
-
-ngff-zarr docs:
-- "Start here - we have tutorials, examples, API docs"
-- "Including documentation on the ngff-zarr MCP server setup"
-
-OME-NGFF spec:
-- "For the deep dive into the format specification"
-- "This is the authoritative source"
-
-Community:
-- "Join the OME community - forums, mailing lists"
-- "People are friendly and helpful!"
-
-Timing: 45 seconds - practical and actionable
--->
-
----
-
-## Tools for Every Scientist
-
-### 🐍 ngff-zarr Python Library
-**For computational researchers:**
-- Direct programmatic access to conversion and optimization
-* Integration with Jupyter notebooks and workflows
-* Scientific Python ecosystem compatibility (NumPy, Dask, Xarray)
-* Custom analysis pipelines built on OME-NGFF
-
-**📝 Note:** *OME-Zarr in cloud environments* by Eric Perlman this afternoon will cover cloud-based imaging workflows in detail!
-
-<!--
-SPEAKER NOTES - Python Library (45 seconds)
-
-For Python users:
-- "If you're a Python person, we've got you covered"
-- "The library integrates seamlessly with your existing stack"
-
-Jupyter:
-- "Works great in notebooks - try it interactively"
-- "See the examples in our docs"
-
-Ecosystem:
-- "Built on NumPy, works with Dask for parallel processing"
-- "Xarray for labeled arrays"
-- "Familiar tools, with OME-NGFF superpowers"
-
-Custom pipelines:
-- "Use it as a building block for your own workflows"
-- "Not locked into our way of doing things"
-
-Cross-reference:
-- "And speaking of cloud - Eric Perlman's talk this afternoon"
-- "Will go deep on cloud workflows"
-- "Highly recommended!"
-
-Timing: 45 seconds
--->
-
----
-
-## Tools for Every Scientist
-
-### 🟦 ngff-zarr TypeScript Library
-**For web and visualization developers:**
-- Browser-based OME-NGFF exploration
-* Web applications for image analysis
-* Cloud-native deployment options
-
-<!--
-SPEAKER NOTES - TypeScript Library (45 seconds)
-
-Web developers:
-- "We also have a TypeScript/JavaScript version"
-- "Build web apps, visualization tools"
-
-Browser-based:
-- "Run OME-NGFF analysis right in the browser"
-- "No server needed for many tasks"
-
-Cloud deployment:
-- "Deploy to Vercel, Netlify, anywhere"
-- "Share interactive visualizations with collaborators"
-
-Timing: 45 seconds
--->
-
----
-
-## ⨍ideus labs
-
-**Who we are:**
-- 🧬 Biomedical imaging specialists
-- 🌟 OME-NGFF ecosystem contributors
-- 🤝 Open science advocates
-
-**What we offer:**
-- 📚 Training and consultation services
-- 🔗 Integration support for your existing workflows
-
-**Connect:** 📧 Email: [info@fideus.io](mailto:info@fideus.io) 🌐 Website: [https://fideus.io](https://fideus.io)
-<!--
-SPEAKER NOTES - fideus Intro (30 seconds)
-
-Introduce fideus:
-- "Quick word about who we are"
-- "We're fideus labs - this is our passion"
-
-What we do:
-- "We specialize in biomedical imaging infrastructure"
-- "We're active contributors to OME-NGFF and related tools"
-- "We're committed to open science and open source"
-
-Not a sales pitch:
-- "We're here to help the community"
-- "Whether that's with us or on your own"
-- "Happy to chat after the talk or during breaks"
-
-Timing: 30 seconds - brief and humble
 -->
 
 ---
@@ -1068,6 +930,110 @@ Timing: 45 seconds
 -->
 
 ---
+## Tools for Every Scientist
+
+### 🐍 ngff-zarr Python Library
+**For computational researchers:**
+- Direct programmatic access to conversion and optimization
+* Integration with Jupyter notebooks and workflows
+* Scientific Python ecosystem compatibility (NumPy, Dask, Xarray)
+* Custom analysis pipelines built on OME-NGFF
+
+**📝 Note:** *OME-Zarr in cloud environments* by Eric Perlman this afternoon will cover cloud-based imaging workflows in detail!
+
+<!--
+SPEAKER NOTES - Python Library (45 seconds)
+
+For Python users:
+- "Even if you don't want to use AI assistants yet"
+- "If you're a Python person, we've got you covered"
+- "The library integrates seamlessly with your existing stack"
+
+Jupyter:
+- "Works great in notebooks - try it interactively"
+- "See the examples in our docs"
+
+Ecosystem:
+- "Built on NumPy, works with Dask for parallel processing"
+- "Xarray for labeled arrays"
+- "Familiar tools, with OME-NGFF superpowers"
+
+Custom pipelines:
+- "Use it as a building block for your own workflows"
+- "Not locked into our way of doing things"
+
+Cross-reference:
+- "And speaking of cloud - Eric Perlman's talk this afternoon"
+- "Will go deep on cloud workflows"
+- "Highly recommended!"
+
+Timing: 45 seconds
+-->
+
+---
+
+## Tools for Every Scientist
+
+### 🟦 ngff-zarr TypeScript Library
+**For web and visualization developers:**
+- Browser-based OME-NGFF exploration
+* Web applications for image analysis
+* Cloud-native deployment options
+
+<!--
+SPEAKER NOTES - TypeScript Library (45 seconds)
+
+Web developers:
+- "We also have a TypeScript/JavaScript version"
+- "Build web apps, visualization tools"
+
+Browser-based:
+- "Run OME-NGFF analysis right in the browser"
+- "No server needed for many tasks"
+
+Cloud deployment:
+- "Deploy to Vercel, Netlify, anywhere"
+- "Share interactive visualizations with collaborators"
+
+Timing: 45 seconds
+-->
+
+---
+
+## ⨍ideus labs
+
+**Who we are:**
+- 🧬 Biomedical imaging specialists
+- 🌟 OME-NGFF ecosystem contributors
+- 🤝 Open science advocates
+
+**What we offer:**
+- 📚 Training and consultation services
+- 🔗 Integration support for your existing workflows
+
+**Connect:** 📧 Email: [info@fideus.io](mailto:info@fideus.io) 🌐 Website: [https://fideus.io](https://fideus.io)
+<!--
+SPEAKER NOTES - fideus Intro (30 seconds)
+
+Introduce fideus:
+- "Quick word about who we are"
+- "We're fideus labs - this is our passion"
+
+What we do:
+- "We specialize in biomedical imaging infrastructure"
+- "We're active contributors to OME-NGFF and related tools"
+- "We're committed to open science and open source"
+
+Not a sales pitch:
+- "We're here to help the community"
+- "Whether that's with us or on your own"
+- "Happy to chat after the talk or during breaks"
+
+Timing: 30 seconds - brief and humble
+-->
+
+---
+
 
 ## Key Takeaways
 
@@ -1134,7 +1100,6 @@ Final thoughts:
 Open the floor:
 - "What questions do you have?"
 - "Anyone have a specific use case you want to discuss?"
-- "Concerns about adoption or integration?"
 
 Be ready for common questions:
 - Performance compared to other formats
@@ -1153,4 +1118,40 @@ Thank them:
 - "Let's make bioimage analysis better together"
 
 Timing: Flexible - use remaining time, but don't run over!
+-->
+
+---
+
+## Getting Started with OME-NGFF
+
+### 📚 Resources and Documentation
+
+**ngff-zarr Project:**
+- 📖 **Documentation:**: https://ngff-zarr.readthedocs.io
+  -  Comprehensive guides and API reference
+- 📂 **GitHub:** https://github.com/fideus-labs/ngff-zarr
+
+**OME-NGFF Specification:**
+- 📋 **NGFF Standard:** https://ngff.openmicroscopy.org
+- 📚 **Community:** Open Microscopy Environment (OME)
+
+<!--
+SPEAKER NOTES - Resources (45 seconds)
+
+Point to resources:
+- "As we go through questions and discussion, everything I've shown you is documented here"
+
+ngff-zarr docs:
+- "Start here - we have tutorials, examples, API docs"
+- "Including documentation on the ngff-zarr MCP server setup"
+
+OME-NGFF spec:
+- "For the deep dive into the format specification"
+- "This is the authoritative source"
+
+Community:
+- "Join the OME community - forums, mailing lists"
+- "People are friendly and helpful!"
+
+Timing: 45 seconds - practical and actionable
 -->
