@@ -948,6 +948,7 @@ For Python users:
 - "Even if you don't want to use AI assistants yet"
 - "If you're a Python person, we've got you covered"
 - "The library integrates seamlessly with your existing stack"
+- "The package has over 15,000 monthly downloads from PyPI and a dozen contributors"
 
 Jupyter:
 - "Works great in notebooks - try it interactively"
