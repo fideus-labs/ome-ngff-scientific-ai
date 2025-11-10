@@ -29,6 +29,9 @@ OME-NGFF Workshop 2025
 
 <div class="small-text">
 
+🌐 [HTML slides](https://fideus-labs.github.io/ome-ngff-scientific-ai/) | 📄 [PDF slides](https://fideus-labs.github.io/ome-ngff-scientific-ai/ome-ngff-scientific-ai.pdf) | 📂 [GitHub repository](https://github.com/fideus-labs/ome-ngff-scientific-ai)
+
+
 **📜 License:** Content [CC-BY-4.0](https://creativecommons.org/licenses/by/4.0/) | Code [MIT](https://opensource.org/licenses/MIT)
 
 </div>
