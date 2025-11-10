@@ -346,7 +346,7 @@ Timing: 1 minute - this is the payoff slide!
 
 ---
 
-![h:150 center ngff-zarr logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ngff-zarr-logo.png)
+![h:150 center ngff-zarr logo](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/ngff-zarr-logo.png)
 
 # Part 2: Introduction to the ngff-zarr MCP Server
 *AI-Powered Bioimage Conversion and Batch Processing*
@@ -412,7 +412,7 @@ Timing: 1.5 minutes - this is new to most people
 
 ## The ngff-zarr MCP Server
 
-![h:150 center ngff-zarr logo](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ngff-zarr-logo.png)
+![h:150 center ngff-zarr logo](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/ngff-zarr-logo.png)
 
 **What is it?**
 * [**ngff-zarr**](https://ngff-zarr.readthedocs.io) is an open-source toolkit for working with OME-NGFF data
@@ -608,7 +608,7 @@ Convert the vs_male.nrrd file to OME-Zarr format and
 find the optimal compression codec for this type of data.
 ```
 
-**✨ [Watch the AI agent](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-convert-output.png):**
+**✨ [Watch the AI agent](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/ai-convert-output.png):**
 1. 🔍 Analyze the input file
 2. 🎯 Select appropriate parameters
 3. ⚙️ Execute the conversion
@@ -647,7 +647,7 @@ Examine the contents of carp.ome.zarr and tell me
 about its structure, dimensions, and metadata
 ```
 
-**✨ [The AI agent will](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-examine-contents-output.png):**
+**✨ [The AI agent will](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/ai-examine-contents-output.png):**
 - 🔍 Inspect multiscale levels
 - 📏 Report spatial metadata
 - 🧩 Analyze chunk structure
@@ -688,7 +688,7 @@ Generate a Python script to batch convert them all
 to OME-Zarr with the same optimal settings
 ```
 
-**✨ [The AI agent creates](https://fideus-labs.github.io/scientific-ai-omezarr-tutorial/assets/ai-generate-batch-script-output.png):**
+**✨ [The AI agent creates](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/ai-generate-batch-script-output.png):**
 - 🐍 Complete Python script
 - ⚠️ Error handling
 - 📈 Progress reporting
