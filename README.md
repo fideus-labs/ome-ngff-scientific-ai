@@ -1101,6 +1101,7 @@ Final thoughts:
 Open the floor:
 - "What questions do you have?"
 - "Anyone have a specific use case you want to discuss?"
+- "How much time is a postdoc going to spend on the next 50 images?"
 
 Be ready for common questions:
 - Performance compared to other formats
