@@ -228,7 +228,7 @@ Timing: 1.5 minutes - enthusiasm is key here!
 ### ☁️ Cloud-Ready Architecture
 * **Chunked storage** - access specific regions without downloading entire datasets
 * **Hierarchical structure** - AI can reason about data at multiple scales
-* **Open standard** - works everywhere your AI runs
+* **Standard web interfaces** - works everywhere your AI runs
 
 <!--
 SPEAKER NOTES - OME-NGFF + AI Part 1: Cloud Architecture (1 minute)
@@ -238,15 +238,15 @@ Connect to AI capabilities:
 
 Cloud-ready chunked storage:
 - "The AI doesn't need to download terabytes - it can grab just the chunks it needs"
-- "Like reading specific chapters of a book instead of the whole library"
 
 Hierarchical structure:
-- "Multiple resolution levels mean the AI can start with an overview, then zoom into details"
-- "Smart data access for smart systems"
+- "Like reading specific chapters of a book instead of the whole library"
 
-Question to audience:
-- "How many of you have datasets that are too large to process on a single machine?"
-- Acknowledge the pain point
+Web-friendly, AI-tool-calling friendly interface:
+- "AI can request just the metadata it needs - dimensions, spacing, coordinate systems"
+- "Then fetch only the specific data regions required for analysis"
+- "Works seamlessly whether your data is local or in the cloud"
+- "The same HTTP-based interface works everywhere - perfect for AI tool integration"
 
 Timing: 1 minute - keep pace brisk
 -->
@@ -266,7 +266,6 @@ SPEAKER NOTES - OME-NGFF + AI Part 2: Metadata (45 seconds)
 Rich metadata advantage:
 - "But storage format isn't enough - the AI needs to UNDERSTAND your data"
 - "OME-NGFF embeds all the spatial metadata, calibration, channel information"
-- "The AI can reason: 'This is confocal, 0.5 micron spacing, 4 channels including DAPI'"
 
 Standards matter:
 - "Because it's standards-compliant, the AI can make intelligent assumptions"
@@ -295,12 +294,7 @@ Open science connection:
 - "The AI tools we build today will work with your data in 10 years"
 
 Emphasize community:
-- "You're joining a community, not buying into a vendor"
-- "That's why we're all here at this workshop!"
-
-Question:
-- "How many of you have struggled with proprietary formats becoming obsolete?"
-- Validate their pain
+- "You're JOINING a COMMUNITY, not buying into a vendor"
 
 Timing: 45 seconds
 -->
@@ -319,10 +313,10 @@ Automated, Reproducible Workflows
 ```
 
 **What becomes possible:**
-- 🧪 Analyze petabyte-scale datasets in minutes
-- 📊 Reproducible computational experiments
-- 🎯 Intelligent parameter optimization
-- 🚀 Batch processing without manual intervention
+* 🧪 Analyze petabyte-scale datasets in minutes
+* 📊 Reproducible computational experiments
+* 🎯 Intelligent parameter optimization
+* 🚀 Batch processing without manual intervention
 
 <!--
 SPEAKER NOTES - The Combination (1 minute)
@@ -343,7 +337,9 @@ Each bullet:
 - Batch: "Your weekend work becomes 10 minutes on Monday morning"
 
 Pause:
-- "Now let me show you how this actually works..."
+- "This is the vision."
+- "We are not there yet."
+- "But we ARE on our awy there! Now let me show you how this ACTUALLY works..."
 
 Timing: 1 minute - this is the payoff slide!
 -->
@@ -360,7 +356,7 @@ SPEAKER NOTES - Part 2 Transition (30 seconds)
 
 Energy shift:
 - "Okay, enough theory - let's get practical"
-- "I'm going to introduce you to a tool you can actually use TODAY"
+- "I'm going to introduce you to a free and open source tool available TODAY"
 - Check time - should be around 8-9 minutes in
 
 Timing: 30 seconds - quick transition
@@ -391,13 +387,13 @@ Your Scientific Data & Tools
 SPEAKER NOTES - MCP Introduction (1.5 minutes)
 
 What is MCP:
-- "MCP is like USB for AI - a universal connector"
+- "The Model Context Protocol (MCP) is like USB for AI - a universal connector"
 - "Developed by Anthropic, but it's open and vendor-neutral"
 - Point to diagram: "Your AI assistant connects to scientific tools through this protocol"
 
 Why this matters:
 - "You don't have to choose between AI platforms"
-- "Works with Claude, with Qodo, with future AI systems"
+- "Works with Claude, with Cursor, with GitHub Copilot, with dozens of existing agent platforms and with future AI systems"
 - "The same MCP server works with all of them"
 
 Easy integration:
@@ -438,7 +434,7 @@ What this means:
 
 Emphasize:
 - "Completely open source - MIT licensed"
-- "Link is in the slides - you can try this TODAY"
+- "Link is in the slides"
 
 Timing: 1 minute
 -->
@@ -447,11 +443,11 @@ Timing: 1 minute
 
 ## The ngff-zarr MCP Server
 **What can it do?**
-- 🔄 **Convert** scientific images (NRRD, TIFF, Nifti, etc.) to OME-Zarr
-- ✅ **Validate** OME-Zarr datasets for compliance and interoperability
-- 🛠️ **Optimize** compression and chunking for your specific access patterns
-- 📝 **Inspect** multiscale pyramids, metadata, and data structure
-- 📦 **Batch process** large collections of images with reproducible settings
+* 🔄 **Convert** scientific images (NRRD, TIFF, Nifti, etc.) to OME-Zarr
+* ✅ **Validate** OME-Zarr datasets for compliance and interoperability
+* 🛠️ **Optimize** compression and chunking for your specific access patterns
+* 📝 **Inspect** multiscale pyramids, metadata, and data structure
+* 📦 **Batch process** large collections of images with reproducible settings
 
 <!--
 SPEAKER NOTES - Capabilities (1.5 minutes)
@@ -475,12 +471,7 @@ Inspect:
 - "Understand what's actually in your data"
 
 Batch process:
-- "And here's where it gets really useful..."
-- Set up for next slide
-
-Question:
-- "Which of these would save you the most time in YOUR workflow?"
-- Acknowledge responses
+- "Generate bespoke batch processing scripts for large collections of images with reproducible settings"
 
 Timing: 1.5 minutes - let each capability sink in
 -->
@@ -513,12 +504,12 @@ Bring back the scenario:
 Step by step pain:
 1. Format conversion:
    - "First hurdle - get images into format the analysis tools can read"
-   - "Proprietary microscope format doesn't work with Python tools"
+   - "Proprietary microscope format doesn't work with open ecosystem tools"
    - "Spend half a day on format conversion alone"
 
 2. Segmentation:
    - "Then the real work - write segmentation code"
-   - "Parameters that work for image 1 fail on image 15"
+   - "Parameters that work for Image Number 1 fail on Image Number 15"
    - "Back to parameter tuning, over and over"
 
 3. Measurements:
@@ -538,7 +529,7 @@ Step by step pain:
    - "Good luck reproducing this in 6 months"
 
 The reality:
-- "This is 2-3 weeks of your postdoc's time"
+- "This is 2-3 weeks of a postdoc's time"
 - "And that's if everything goes relatively smoothly"
 - "We've all been there"
 
@@ -568,14 +559,13 @@ AI agent:
 SPEAKER NOTES - After AI Example (1.5 minutes)
 
 The contrast:
-- "Now watch what happens with agentic AI..."
+- "Now watch what happens with our agentic AI future..."
 - Read the natural language request slowly
-- "That's it. That's all YOU do."
 
 AI does the work:
-- "The AI takes over:"
-- "Analyzes a sample to understand your data"
-- "Picks optimal settings based on your constraints"
+- "The agent helps us:"
+- "Analyze a sample to understand your data"
+- "Determine optimal settings based on your constraints"
 - "Generates AND RUNS the conversion"
 - "Tracks progress, handles errors"
 - "Gives you a summary when done"
@@ -586,12 +576,9 @@ The magic moment:
 - "From tedious to... well, you just describe what you want"
 
 Reality check:
-- "Now, this isn't magic - the AI can still make mistakes"
-- "But it's MUCH faster to review and correct than to do from scratch"
-- "And it documents everything automatically"
-
-Question:
-- "What batch processing task would you try this on first?"
+- "Now, this isn't magic - the AI CAN still make mistakes"
+- "But it's MUCH faster to review and correct than to do it all from scratch"
+- "And the agent can document everything as you work with the agent"
 
 Timing: 1.5 minutes - this is the "wow" moment
 -->
@@ -635,16 +622,16 @@ Show the simplicity:
 - "No command-line flags, no config files"
 - Point to the chat message: "Just describe what you want"
 
+Demo reference:
+- Click the link
+- "We see the agent's reasoning process"
+
 What happens:
 - "The AI agent takes over from here"
 - "Analyzes the file - dimensions, data type, characteristics"
 - "Picks appropriate parameters automatically"
 - "Runs the conversion and tests different codecs"
 - "Tells you which one worked best and why"
-
-Demo reference:
-- "Click that link to see the actual output"
-- "You'll see the agent's reasoning process"
 
 Timing: 45 seconds
 -->
@@ -673,11 +660,14 @@ Beyond conversion:
 - "It's not just for conversion - also for exploration"
 - "Ask questions about your data in plain language"
 
+Demo reference:
+- Click the link
+
 What you get:
 - "The AI inspects the multiscale pyramid structure"
 - "Reports all the spatial metadata - spacing, units, coordinates"
 - "Analyzes how the data is chunked and compressed"
-- "Even suggests what you might want to do next"
+- "In the future, it could even suggest what you might want to do next"
 
 Use case:
 - "Great for validating datasets before sharing"
@@ -711,10 +701,13 @@ Scaling up:
 - "And here's where it gets really powerful"
 - "Once you've tested on one file, scale to many"
 
+Demo reference:
+- Click the link
+
 What it generates:
-- "Produces a complete, runnable Python script"
+- "It produces a complete, runnable Python script"
 - "Includes proper error handling - won't crash on bad files"
-- "Progress bars so you know where you are"
+- "Progress output so you know where you are"
 - "Uses the optimal settings it learned from your test conversion"
 
 Reproducibility:
@@ -773,7 +766,6 @@ Beyond conversion:
 Key features:
 - "Describes your multiscale structure in detail"
 - "Generates scripts for reproducibility"
-- "Estimates resources for batch jobs"
 - "Validates outputs before you share"
 
 Quick check:
@@ -786,9 +778,9 @@ Timing: 45 seconds
 
 ## The Future of Scientific Image Analysis
 
-**Today:** AI helps with individual tasks
+**Today:** AI agents help with format conversion and optimization
 
-**Tomorrow:** AI orchestrates entire scientific workflows
+**Tomorrow:** AI agents assist entire scientific workflows
 - 🧪 Multi-step analysis pipelines
 - 🎯 Automated optimization and tuning
 - 📈 Scalable processing of massive datasets
@@ -803,16 +795,14 @@ Look ahead:
 - "This is just the beginning - where is this going?"
 
 Today vs tomorrow:
-- "Right now, AI helps with one task at a time"
-- "But soon, you'll describe an entire analysis workflow"
+- "Right now, the helps with format conversion"
+- "But we can have a future where you'll have advanced assistance through an entire analysis workflow"
 - "'Take these images, segment the cells, quantify fluorescence, compare to controls, generate publication figures'"
-- "One request, entire pipeline"
 
 Examples:
 - Multi-step: "Chain together preprocessing, analysis, visualization"
 - Optimization: "AI tries different parameters, finds best results"
-- Scale: "Datasets that don't fit on one machine"
-- Discovery: "AI notices patterns you might have missed"
+- Discovery: "And, the agent may even notice patterns you might have missed"
 
 Your role shift:
 - "You become the scientist who asks questions"
@@ -857,12 +847,11 @@ Timing: 30 seconds
 SPEAKER NOTES - Resources (45 seconds)
 
 Point to resources:
-- "First, bookmark these links"
 - "Everything I've shown you is documented here"
 
 ngff-zarr docs:
 - "Start here - we have tutorials, examples, API docs"
-- "Installation is pip install ngff-zarr"
+- "Including documentation on the ngff-zarr MCP server setup"
 
 OME-NGFF spec:
 - "For the deep dive into the format specification"
@@ -871,9 +860,6 @@ OME-NGFF spec:
 Community:
 - "Join the OME community - forums, mailing lists"
 - "People are friendly and helpful!"
-
-Action:
-- "Take out your phones, snap a picture of these URLs"
 
 Timing: 45 seconds - practical and actionable
 -->
@@ -905,7 +891,7 @@ Jupyter:
 Ecosystem:
 - "Built on NumPy, works with Dask for parallel processing"
 - "Xarray for labeled arrays"
-- "Familiar tools, OME-NGFF superpowers"
+- "Familiar tools, with OME-NGFF superpowers"
 
 Custom pipelines:
 - "Use it as a building block for your own workflows"
@@ -914,7 +900,7 @@ Custom pipelines:
 Cross-reference:
 - "And speaking of cloud - Eric Perlman's talk this afternoon"
 - "Will go deep on cloud workflows"
-- "Highly recommend attending!"
+- "Highly recommended!"
 
 Timing: 45 seconds
 -->
@@ -970,16 +956,12 @@ Introduce fideus:
 
 What we do:
 - "We specialize in biomedical imaging infrastructure"
-- "Active contributors to OME-NGFF and related tools"
-- "Committed to open science and open source"
+- "We're active contributors to OME-NGFF and related tools"
+- "We're committed to open science and open source"
 
 Not a sales pitch:
 - "We're here to help the community"
 - "Whether that's with us or on your own"
-
-What we can help with:
-- "If you need help getting started or integrating OME-NGFF"
-- "We offer training, consulting, integration support"
 - "Happy to chat after the talk or during breaks"
 
 Timing: 30 seconds - brief and humble
@@ -1006,7 +988,7 @@ Explore:
 
 Try it:
 - "Tomorrow - take ONE image and convert it"
-- "Just pip install ngff-zarr and try the basic tutorial"
+- "Just pip install ngff-zarr and try the command line interface"
 - "5 minutes to get started"
 
 Evaluate:
@@ -1034,7 +1016,7 @@ Next month or two:
 
 Pilot:
 - "Start small - one project, one dataset"
-- "Learn the workflows without disrupting everything"
+- "Learn the workflow without disrupting everything"
 - "Get your team comfortable with the tools"
 
 Integrate:
@@ -1043,9 +1025,7 @@ Integrate:
 - "It should ENHANCE your workflow, not replace it"
 
 Measure:
-- "Track the benefits - time saved, errors reduced"
-- "Build the case for broader adoption"
-- "Data-driven decisions about infrastructure"
+- "And track the benefits - time saved, errors reduced"
 
 Question:
 - "What would be a good pilot project in YOUR lab?"
@@ -1066,7 +1046,7 @@ Timing: 45 seconds
 SPEAKER NOTES - Long-term Vision (45 seconds)
 
 Looking ahead:
-- "And looking 6-12 months out, imagine this..."
+- "And looking 6-12 months out, imagine..."
 
 Scale:
 - "Datasets that seemed impossible become routine"
@@ -1076,10 +1056,10 @@ Scale:
 Leverage AI:
 - "AI assistants handling the grunt work"
 - "You focus on interpretation and discovery"
-- "Automation that actually works"
+- "And you have automation that actually works"
 
 Contribute:
-- "And here's what's beautiful - as you build tools and workflows"
+- "Here's what's BEAUTIFUL - as you build tools and workflows"
 - "Share them back with the community"
 - "Make OME-NGFF better for everyone"
 - "That's how open science works"
@@ -1106,15 +1086,15 @@ Summarize the message:
 - "Let me leave you with four key points"
 
 Read each one with emphasis:
-1. OME-NGFF:
+1. "OME-NGFF:"
    - "This format was DESIGNED for the AI era"
    - "Cloud-ready, open, future-proof"
 
-2. MCP:
+2. "MCP:"
    - "The bridge that makes AI assistants actually useful"
    - "Standard protocol, works everywhere"
 
-3. ngff-zarr:
+3. "ngff-zarr:"
    - "Tools you can use TODAY"
    - "Free, open source, ready to go"
 
