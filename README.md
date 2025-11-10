@@ -50,7 +50,7 @@ Timing: Keep this brief - 2 minutes max. Energy should be high!
 
 ## Real-life Bioimaging Lab Challenges
 
-**Scenario:** Your postdoc just collected 50 microscopy images
+**Scenario:** A postdoc just collected 50 microscopy images
 - Need to quantify cell populations across treatment conditions
 - Segment nuclei, measure fluorescence intensity, compare to controls
 - Generate statistical analysis and publication-quality figures
@@ -60,7 +60,7 @@ SPEAKER NOTES - The Challenge (0.5 minutes)
 
 Make it visceral:
 - "Let me start with a situation you may have experienced..."
-- "Your postdoc is excited - finally got those microscopy results"
+- "The postdoc is excited - finally got those microscopy results"
 - "50 beautiful images, now you just need the quantification..."
 
 -->
@@ -96,7 +96,7 @@ The old way:
 The new way:
 - "Now imagine instead - they just DESCRIBE what they need"
 - "Natural language, like talking to a collaborator"
-- "The AI handles the technical details, they review the results"
+- "The AI agent provides transformative technical assistance"
 - "Hours instead of weeks"
 
 Impact:
@@ -836,7 +836,7 @@ Timing: 30 seconds
 
 **ngff-zarr Project:**
 - 📖 **Documentation:**: https://ngff-zarr.readthedocs.io
-  *  Comprehensive guides and API reference
+  -  Comprehensive guides and API reference
 - 📂 **GitHub:** https://github.com/fideus-labs/ngff-zarr
 
 **OME-NGFF Specification:**
