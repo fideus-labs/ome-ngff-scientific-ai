@@ -6,7 +6,7 @@ paginate: true
 backgroundColor: #fff
 color: #333
 header: 'OME-NGFF and Scientific AI'
-footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | fideus labs | OME-NGFF Workshop 2025'
+footer: '[![h:40 fideus labs logo](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/fideus-logo-no-text.svg)](https://fideus.io)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Matt McCormick, PhD | ⨍ideus labs | OME-NGFF Workshop 2025'
 ---
 
 <style>
@@ -23,7 +23,7 @@ img[alt~="center"] {
 ## Intelligent Bioimage Analysis Workflows
 
 **Matt McCormick, PhD**
-*fideus labs*
+*⨍ideus labs*
 
 OME-NGFF Workshop 2025
 
@@ -48,25 +48,25 @@ Timing: Keep this brief - 2 minutes max. Energy should be high!
 
 ---
 
-## The Challenge Every Lab Faces
+## Real-life Bioimaging Lab Challenges
 
 **Scenario:** Your postdoc just collected 50 microscopy images
-* Need to quantify cell populations across treatment conditions
-* Segment nuclei, measure fluorescence intensity, compare to controls
-* Generate statistical analysis and publication-quality figures
+- Need to quantify cell populations across treatment conditions
+- Segment nuclei, measure fluorescence intensity, compare to controls
+- Generate statistical analysis and publication-quality figures
 
 <!--
 SPEAKER NOTES - The Challenge (0.5 minutes)
 
 Make it visceral:
-- "Let me start with a situation I bet you've experienced..."
+- "Let me start with a situation you may have experienced..."
 - "Your postdoc is excited - finally got those microscopy results"
-- "50 beautiful images, now just need the quantification..."
+- "50 beautiful images, now you just need the quantification..."
 
 -->
 ---
 
-## The Challenge Every Lab Faces
+## Real-life Bioimaging Lab Challenges
 
 **Without AI:**
 ```
@@ -89,9 +89,9 @@ SPEAKER NOTES - The Challenge (1.5 minutes)
 
 The old way:
 - "So they spend the next THREE WEEKS wrestling with analysis"
-- "Writing scripts, debugging when image 23 has different dimensions"
+- "Writing scripts, debugging when Image Number 23 has different dimensions"
 - "Re-running everything because they forgot to save parameters"
-- "Sound familiar?"
+- "This is the reality we regularly experience"
 
 The new way:
 - "Now imagine instead - they just DESCRIBE what they need"
@@ -102,7 +102,7 @@ The new way:
 Impact:
 - "That's three weeks your postdoc gets back for actual science"
 - "Three weeks closer to publication"
-- "And it's fully reproducible - no 'what parameters did I use?' six months later"
+- "And it's fully reproducible - no 'what parameters were used?' six months later"
 
 Question:
 - "How many postdoc-weeks would YOUR lab save?"
@@ -133,12 +133,8 @@ Roadmap:
 - "We have 25 minutes together, so let's make them count"
 - Point to each section as you describe it
 - "First, I'll show you WHY OME-NGFF and AI are a perfect match"
-- "Then we'll dive into a REAL tool you can use today - the ngff-zarr MCP server"
-- "Finally, concrete steps YOU can take this week to get started"
-
-Questions to engage:
-- "Does this agenda make sense for where you are in your OME-NGFF journey?"
-- "Anyone here already using AI in their image analysis workflows?"
+- "While we ARE admittedly only in the beginning stages of SCIENTIFIC AI, we will dive into a REAL tool you can use today - the ngff-zarr MCP server"
+- "Finally, we will look at concrete steps YOU can take NOW to get started"
 
 Timing: 1 minute - keep it moving!
 -->
@@ -154,7 +150,7 @@ SPEAKER NOTES - Part 1 Transition (30 seconds)
 Transition:
 - "Let's start with the big picture - what's happening in AI right now"
 - Energy shift: move from logistics to inspiration
-- "I want you to think about your most tedious, repetitive imaging workflow..."
+- "Let's examine why OME-NGFF is ideal for agentic scientific AI"
 
 Timing: Quick transition - 30 seconds
 -->
@@ -175,16 +171,15 @@ SPEAKER NOTES - AI Revolution (1.5 minutes)
 
 Context setting:
 - "We're in the middle of a profound shift in how we interact with computers"
-- "Raise your hand if you've used ChatGPT or Claude to write code or analyze data"
+- "Most folks have used chatbots to search for information or generate narritive text"
 - "But here's what's NEW - we're moving beyond chatbots to AGENTS"
 
 Key point - AGENTIC AI:
 - Emphasize the difference: "Not just answering questions, but actually DOING work"
 - "Planning multiple steps, using tools, making decisions"
-- "Like having a postdoc who never sleeps and never makes transcription errors"
 
 The challenge:
-- "But here's the problem - how does AI actually work with YOUR imaging data?"
+- "But here's the problem - how does AI -- text-based large language models -- actually WORK with YOUR imaging DATA?"
 - "That's where OME-NGFF comes in..."
 - Pause for effect before moving on
 
@@ -195,13 +190,13 @@ Timing: 1.5 minutes - this is foundational!
 
 ## What is Agentic AI?
 
-**Traditional AI:** Question → Answer
+*Traditional AI:* **Question → Answer**
+*Agentic AI:* **Goal → Outcome**
 
-**Agentic AI:**
-- 🧠 **Context** - Understanding your specific problem
-- 🛠️ **Tools** - Access to your scientific software
-- 🔄 **Reasoning** - Planning multi-step workflows
-- ✅ **Execution** - Actually processing your data
+* 🧠 **Context** - Understanding your specific problem
+* 🛠️ **Tools** - Access to your scientific software
+* 🔄 **Reasoning** - Planning multi-step workflows
+* ✅ **Execution** - Actually processing your data
 
 **Result:** AI that understands your science and automates complex analyses
 
@@ -221,7 +216,7 @@ Engage with questions:
 - "What if you could just DESCRIBE what you need and have it happen?"
 
 Make it tangible:
-- "This isn't science fiction - I'm going to show you this working in 10 minutes"
+- "This isn't science fiction - I'm going to show you how this works in 10 minutes"
 
 Timing: 1.5 minutes - enthusiasm is key here!
 -->
