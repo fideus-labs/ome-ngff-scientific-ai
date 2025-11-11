@@ -27,7 +27,7 @@ img[alt~="center"] {
 
 OME-NGFF Workshop 2025
 
-![bg left:50%](./assets/virginie-ome-ais.png)
+![bg left:50%](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/virginie-ome-ais.png)
 
 <div class="small-text">
 
@@ -1142,7 +1142,7 @@ Timing: Flexible - use remaining time, but don't run over!
 - 📋 **NGFF Standard:** https://ngff.openmicroscopy.org
 - 📚 **Community:** Open Microscopy Environment (OME)
 
-![bg right:25%](./assets/virginie-ome-ais.png)
+![bg right:25%](https://fideus-labs.github.io/ome-ngff-scientific-ai/assets/virginie-ome-ais.png)
 
 <!--
 SPEAKER NOTES - Resources (45 seconds)
